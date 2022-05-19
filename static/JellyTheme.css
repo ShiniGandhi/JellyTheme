@@ -1,3 +1,7 @@
+:root {
+--deftraback:red!important;
+--rounding:7px;
+}
 
 ::-moz-selection {
 background:var(--accent);
