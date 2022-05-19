@@ -1,3 +1,3 @@
 # JellyTheme
 A heavily modified theme for Jellyfin </br>
-_**TBD**_
+**TBD**
