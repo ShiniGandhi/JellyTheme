@@ -1,0 +1,23 @@
+.btnPlayTrailer {
+display:none
+}
+
+.mediaInfoCriticRatingFresh {
+display:none
+}
+
+.headerUserButton {
+display:none
+}
+
+.headerCastButton {
+display:none
+}
+
+a.lnkDisplayPreferences.listItem-border.emby-button {
+display:none!important
+}
+
+a.lnkHomePreferences.listItem-border.emby-button {
+display:none!important
+}
