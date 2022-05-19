@@ -1867,7 +1867,6 @@ padding-right:30vw
 }
 
 .layout-desktop div#childrenCollapsible {
-margin-top:2em;
 width:100%
 }
 
@@ -2190,15 +2189,12 @@ margin-bottom:2em
 .layout-desktop div#castCollapsible {
 -webkit-mask-image:linear-gradient(90deg,rgba(0,0,0,1) 92%,rgba(0,0,0,0) 100%);
 overflow-x:clip;
-width:68vw
 }
 
 .layout-tv div#castCollapsible {
 -webkit-mask-image:linear-gradient(90deg,rgba(0,0,0,1) 92%,rgba(0,0,0,0) 100%);
 margin-bottom:6em;
-margin-top:-22vh;
 overflow-x:clip;
-width:68vw
 }
 
 .layout-tv .trackSelections {
