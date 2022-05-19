@@ -2189,7 +2189,6 @@ margin-bottom:2em
 .layout-desktop div#castCollapsible {
 -webkit-mask-image:linear-gradient(90deg,rgba(0,0,0,1) 92%,rgba(0,0,0,0) 100%);
 overflow-x:clip;
-width:68vw
 }
 
 .layout-tv div#castCollapsible {
