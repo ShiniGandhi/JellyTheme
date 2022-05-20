@@ -52,9 +52,55 @@ If your server's metadata is in Hebrew, Arabic (or any other language that is wr
 ```
 
 ## Installation Instuctions - Advanced Extras
-These require modifying some of the JavaScript files that Jellyfin generates. They will be different for every instance, and probably with different names, so make sure you back up these files before making any changes.
+These require modifying some of the JavaScript files that Jellyfin generates. They will be different for every instance, and probably with different names, so make sure you back up these files before making any changes. </br>
+These work best if you're running Jellyfin inside a Docker container, so you can make sure the files won't get overwritten (which can cause issues if something major changes in Jellyfin). </br>
+All files related to this section are located in `/usr/share/jellyfin/web/` if using a Docker container. I'm not sure where they are if using other types of installations.
+**NOTE: If using a Docker container, you must copy these files to your filesystem and then add them as "read-only volumes" in your container configuration**
+Example in a docker-compose file:
+```
+    volumes:
+      - ./custom/main.********************.bundle.js:/usr/share/jellyfin/web/main.********************.bundle.js:ro
+      - ./custom/itemDetails-index-html.********************.bundle.js:/usr/share/jellyfin/web/itemDetails-index-html.********************.bundle.js:ro
+```
+Keep in mind that if the file is not read-only Jellyfin might overwrite it at some point, which is why I suggest using Docker.
 
-**TBD**
+
+#### Force Backdrops
+1. Open your `main.********************.bundle.js` file (asterisks are replaced with something specific to your instance, but this never changes after initial setup).
+2. Find `enableBackdrops:function() {return _}` and change the `_` to `x`.
+3. Clear browser cahce.
+
+#### Force Video Backdrops
+Before you do this, you **must** have a directory called `backdrops` with a video file in every movie or show you want to have a backdrop, otherwise Jellyfin won't know what to play.
+1. Open your `main.********************.bundle.js` file (asterisks are replaced with something specific to your instance, but this never changes after initial setup).
+2. Find `enableThemeVideos:function(){return _}` and change the `_` to 'x'.
+3. Clear browser cache.
+
+#### Cast List Position
+1. Open your `itemDetails-index-html.********************.bundle.js` file (asterisks are replaced with something specific to your instance, but this never changes after initial setup).
+2. Find the following line:
+```
+<div id="castCollapsible" class="verticalSection detailVerticalSection hide"> <h2 id="peopleHeader" class="sectionTitle sectionTitle-cards padded-right">${HeaderCastAndCrew}</h2> <div is="emby-scroller" class="padded-top-focusscale padded-bottom-focusscale" data-centerfocus="true"> <div id="castContent" is="emby-itemscontainer" class="scrollSlider focuscontainer-x itemsContainer"></div> </div> </div> 
+```
+4. Cut it from the file and paste it before `<div id="childrenCollapsible" class="hide verticalSection`.
+5. Add the following code to your CSS:
+```
+.layout-desktop div#castCollapsible {
+margin-bottom:6em;
+margin-top:-22vh;
+width:68vw;
+}
+
+.layout-desktop div#childrenCollapsible {
+margin-top:4em;
+}
+
+.layout-tv div#castCollapsible {
+margin-top:-22vh;
+width:68vw;
+}
+```
+7. Clear browser cache.
 
 
 ## Screenshots
