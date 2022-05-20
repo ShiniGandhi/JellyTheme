@@ -43,7 +43,7 @@ These require modifying some of the JavaScript files that Jellyfin generates. Th
 #### Main page, no resized cards
 ![](/screenshots/Index.png)
 #### Movie page with a single version and no trailer playing
-![](/screenshots/Movie-No-Trailer-Single-Version.png)
+![](/screenshots/Movie-No-Trailer_Single-Version.png)
 #### Movie page with multiple versions and a trailer playing
 ![](/screenshots/Movie-Trailer-and-Versions.png)
 #### TV show page
