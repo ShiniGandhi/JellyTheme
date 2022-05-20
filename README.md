@@ -55,7 +55,8 @@ If your server's metadata is in Hebrew, Arabic (or any other language that is wr
 These require modifying some of the JavaScript files that Jellyfin generates. They will be different for every instance, and probably with different names, so make sure you back up these files before making any changes. </br>
 These work best if you're running Jellyfin inside a Docker container, so you can make sure the files won't get overwritten (which can cause issues if something major changes in Jellyfin). </br>
 All files related to this section are located in `/usr/share/jellyfin/web/` if using a Docker container. I'm not sure where they are if using other types of installations.
-**NOTE: If using a Docker container, you must copy these files to your filesystem and then add them as "read-only volumes" in your container configuration**
+
+**NOTE: If using a Docker container, you must copy these files to your filesystem and then add them as "read-only volumes" in your container configuration**</br>
 Example in a docker-compose file:
 ```
     volumes:
