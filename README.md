@@ -3,6 +3,11 @@
 
 This is a theme based on [JellyFlix](https://github.com/prayag17/JellyFlix), which is a Netflix-style theme for Jellyfin, so obviously credit to prayag17 for giving me the base for this theme. </br>Most changes can be made by just importing my CSS files, but things like moving the cast to be before the season list requires modification to some JavaScript files.
 
+The theme is optimized for 1080p, but it should work well on 720p, 768p, 1440p and 4K. </br>
+1440p might be okay, but for best results zoom 125% should be used.</br>
+4K is needs to be at 150% zoom. </br>
+I'm still looking into solutions for that.
+
 ## Installation Instuctions - Basic
 #### NOTE - BEFORE INSTALLING
 Any `@import` line that you add to your CSS **must** be at the very top of your custom CSS. otherwise the file will not be imported.
@@ -15,6 +20,14 @@ Put these at the top of your custom CSS:
 }
 ```
 **Change `<COLOR>` to an actual color before pasting, otherwise you'll have no accent color.**
+
+If you don't use video backdrops, add this line to display a poster on mobile:
+```
+.layout-mobile .primaryImageWrapper > img {
+display:block!important;
+}
+```
+
 ### Optional
 These must be added **before** the `:root {` line to work. </br>
 If you want to have a cleaner UI (less options in user settings, buttons on the top bar, etc. add this as well: </br>
