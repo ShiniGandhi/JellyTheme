@@ -1,7 +1,7 @@
 # JellyTheme
 #### A heavily modified theme for Jellyfin with a very original name /s.
 
-This is a theme based on [JellyFlix](https://github.com/prayag17/JellyFlix), which is a Netflix-style theme for Jellyfin, so obviously credit to prayag17 for giving me the base for this theme. </br>Most changes can be made by just importing my CSS files, but things like moving the cast to be before the season list requires modification to some JavaScript files.
+This is a theme based on [JellyFlix](https://github.com/prayag17/JellyFlix), which is a Netflix-style theme for Jellyfin, so obviously credit to **prayag17** for providing the base for this theme. </br>Most changes can be made by just importing my CSS files, but things like moving the cast to be before the season list requires modification to some JavaScript files.
 
 The theme is optimized for 1080p, but it should work well on 720p, 768p, 1440p and 4K. </br>
 1440p might be okay, but for best results zoom 125% should be used.</br>
