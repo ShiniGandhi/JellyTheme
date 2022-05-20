@@ -30,15 +30,22 @@ display:block!important;
 
 ### Optional
 These must be added **before** the `:root {` line to work. </br>
-If you want to have a cleaner UI (less options in user settings, buttons on the top bar, etc. add this as well: </br>
-Feel free to look at the file to see exactly what it hides.</br>
+If you want to have a cleaner UI, add this:</br>
+The following is removed: </br>
+ - Play trailer button </br>
+ - Rotten tomatoes rating </br>
+ - User icon </br>
+ - Cast button (still displayed on mobile) </br>
+ - Display and Home Preferences in User Settings
 ```
 @import url("https://cdn.jsdelivr.net/gh/ShiniGandhi/JellyTheme@master/latest/Cleaner-UI.css");
 ```
+
 If you want Continue Watching, Next Up and the list of seasons to be smaller, as shown in my screenshots, import this:</br>
 ```
 @import url("https://cdn.jsdelivr.net/gh/ShiniGandhi/JellyTheme@master/latest/Resize-Cards.css");
 ```
+
 If your server's metadata is in Hebrew, Arabic (or any other language that is written right-to-left, import this:</br>
 ```
 @import url("https://cdn.jsdelivr.net/gh/ShiniGandhi/JellyTheme@master/latest/RTL-Fix.css");
