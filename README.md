@@ -85,6 +85,7 @@ Before you do this, you **must** have a directory called `backdrops` with a vide
 1. Open your `itemDetails-index-html.********************.bundle.js` file (asterisks are replaced with something specific to your instance, but this never changes after initial setup).
 2. Find the following line:
 ```
+<div id="castCollapsible" class="verticalSection detailVerticalSection hide"> <h2 id="peopleHeader" class="sectionTitle sectionTitle-cards padded-right">${HeaderCastAndCrew}</h2> <div is="emby-scroller" class="padded-top-focusscale padded-bottom-focusscale" data-centerfocus="true"> <div id="castContent" is="emby-itemscontainer" class="scrollSlider focuscontainer-x itemsContainer"></div> </div> </div>
 ```
 4. Cut it from the file and paste it before `<div id="childrenCollapsible" class="hide verticalSection`.
 5. Add the following code to your CSS:
