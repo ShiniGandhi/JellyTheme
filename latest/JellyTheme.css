@@ -2274,5 +2274,5 @@ width:18vw
 }
 
 .playstatebutton-icon-played {
-    color: #c33 !important;
+    color: var(--accent) !important;
 }
