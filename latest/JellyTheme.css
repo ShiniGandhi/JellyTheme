@@ -260,7 +260,7 @@ mask-image:linear-gradient(0deg,transparent 0%,black 90%)!important
 display:none!important
 }
 
-#castContent .card.overflowPortraitCard:not(.layout-mobile) {
+#castContent .card.overflowPortraitCard :not(.layout-mobile) {
 font-size:90%!important;
 width:7vw!important
 }
@@ -1035,14 +1035,6 @@ border-radius:var(--rounding)!important
 font-weight:100;
 margin-right:16px;
 position:relative
-}
-
-.mediaInfoOfficialRating {
-font-size:1vw!important
-}
-
-.starRatingContainer.mediaInfoItem {
-font-size:1.1vw
 }
 
 .mediaInfoItem:not(:last-child):after {
@@ -1880,7 +1872,8 @@ z-index:1!important
 }
 
 .layout-desktop .itemDetailsGroup {
-font-size:large!important
+font-size:large!important;
+margin-bottom: 6%
 }
 
 .layout-desktop .moreFromSeasonSection {
@@ -2048,6 +2041,7 @@ color:#fff!important
 .layout-tv .itemDetailsGroup {
     font-size: 1.2vw;
     margin-top: -5vh;
+    margin-bottom: 6%;
 }
 
 .emby-button.show-focus:focus span.material-icons.detailButton-icon.play_arrow {
@@ -2088,11 +2082,6 @@ background-color:#000!important
 .layout-desktop .emby-scroller-container {
 margin-top:2em
 }
-
-p.overview {
-margin-top:-2vh
-}
-
 
 .layout-mobile .card,.homeLibraryButton {
 max-width:30%
