@@ -2272,3 +2272,7 @@ width:57vw!important
 .nextUpItems .card.overflowBackdropCard.card-hoverable.card-withuserdata :not(.layout-mobile) {
 width:18vw
 }
+
+.playstatebutton-icon-played {
+    color: #c33 !important;
+}
