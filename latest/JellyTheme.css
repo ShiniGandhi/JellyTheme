@@ -26,6 +26,10 @@ color:var(--accent)!important
 background:var(--accent)!important
 }
 
+button.detailButton.emby-button:hover {
+    background-color: #8888;
+}
+
 fieldset.verticalSection.verticalSection-extrabottompadding {
 border-color:#4d4d4d;
 border-radius:var(--rounding)
@@ -160,8 +164,9 @@ mask-composite:intersect;
 mask-image:linear-gradient(to right,transparent,black),linear-gradient(to top,transparent,black);
 position:absolute;
 right:0;
-width:70vw;
-z-index:0
+position:fixed!important;
+width:100%!important;
+z-index: -1;
 }
 
 div#itemBackdrop::after {
@@ -260,7 +265,12 @@ mask-image:linear-gradient(0deg,transparent 0%,black 90%)!important
 display:none!important
 }
 
-#castContent .card.overflowPortraitCard :not(.layout-mobile) {
+.layout-desktop #castContent .card.overflowPortraitCard {
+font-size:90%!important;
+width:7vw!important
+}
+
+.layout-tv #castContent .card.overflowPortraitCard {
 font-size:90%!important;
 width:7vw!important
 }
@@ -1968,12 +1978,6 @@ padding:10vh 2vw 2vh 30vw;
 width:44vw!important
 }
 
-div#itemBackdrop {
-margin-top:-4em!important;
-position:fixed!important;
-width:100%!important
-}
-
 .progressring-spiner {
 border-color:#b1b1b1
 }
@@ -2198,10 +2202,6 @@ object-fit:contain
 
 .layout-mobile .hide-scroll .htmlvideoplayer {
 margin-top:0!important
-}
-
-div#itemBackdrop {
-z-index:-1
 }
 
 h3.tagline {
