@@ -2030,8 +2030,46 @@ margin-top:-8em!important
 }
 
 .layout-tv .emby-button.detailFloatingButton {
-background-color:#700f6d!important;
+background-color:transparent!important;
 color:#fff!important
+}
+
+.layout-tv .emby-button.detailFloatingButton:focus {
+    background-color: var(--accent)!important;
+}
+
+.layout-tv .trackSelections {
+    max-width: 29em;
+    font-size: 0.9vw !important;
+    margin-top: -12vh;
+    margin-left: 26vw;
+}
+
+.layout-tv .itemDetailsGroup {
+    font-size: 1.2vw;
+    margin-top: -5vh;
+}
+
+.emby-button.show-focus:focus span.material-icons.detailButton-icon.play_arrow {
+    color: white !important;
+}
+
+.layout-tv .mainDetailButtons {
+    margin-left: 3vh!important;
+}
+
+.layout-tv .listItemImage-large-tv {
+    height: 23vh !important;
+    width: 55% !important;
+}
+
+.layout-tv #itemDetailPage .vertical-list {
+    grid-template-columns: repeat(2,1fr);
+}
+
+.layout-tv .secondary.listItem-overview.listItemBodyText {
+    font-size: 1vw !important;
+    line-height: inherit;
 }
 
 .layout-tv .nextUpSection.verticalSection.detailVerticalSection {
