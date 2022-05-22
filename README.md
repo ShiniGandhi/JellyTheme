@@ -18,7 +18,7 @@ Since this is my personal theme, it might change however I see fit. If you don't
 ### Required
 Put these at the top of your custom CSS:
 ```
-@import url("https://cdn.jsdelivr.net/gh/ShiniGandhi/JellyTheme@master/latest/JellyTheme.css");
+@import url("https://cdn.jsdelivr.net/gh/ShiniGandhi/JellyTheme@latest/latest/JellyTheme.css");
 :root {
 --accent:<COLOR>!important;
 }
@@ -42,17 +42,17 @@ The following is removed: </br>
  - Cast button (still displayed on mobile) </br>
  - Display and Home Preferences in User Settings
 ```
-@import url("https://cdn.jsdelivr.net/gh/ShiniGandhi/JellyTheme@master/latest/Cleaner-UI.css");
+@import url("https://cdn.jsdelivr.net/gh/ShiniGandhi/JellyTheme@latest/latest/Cleaner-UI.css");
 ```
 
 If you want Continue Watching, Next Up and the list of seasons to be smaller, as shown in my screenshots, import this:</br>
 ```
-@import url("https://cdn.jsdelivr.net/gh/ShiniGandhi/JellyTheme@master/latest/Resize-Cards.css");
+@import url("https://cdn.jsdelivr.net/gh/ShiniGandhi/JellyTheme@latest/latest/Resize-Cards.css");
 ```
 
 If your server's metadata is in Hebrew, Arabic (or any other language that is written right-to-left, import this:</br>
 ```
-@import url("https://cdn.jsdelivr.net/gh/ShiniGandhi/JellyTheme@master/latest/RTL-Fix.css");
+@import url("https://cdn.jsdelivr.net/gh/ShiniGandhi/JellyTheme@latest/latest/RTL-Fix.css");
 ```
 
 ## Installation Instuctions - Advanced Extras
