@@ -1883,7 +1883,8 @@ z-index:1!important
 
 .layout-desktop .itemDetailsGroup {
 font-size:large!important;
-margin-bottom: 6%
+max-width: 23vw;
+margin-bottom: 6%;
 }
 
 .layout-desktop .moreFromSeasonSection {
@@ -2045,6 +2046,7 @@ color:#fff!important
 .layout-tv .itemDetailsGroup {
     font-size: 1.2vw;
     margin-top: -5vh;
+    max-width: 23vw;
     margin-bottom: 6%;
 }
 
@@ -2244,7 +2246,7 @@ z-index:3
 .layout-desktop .trackSelections {
 font-size:small!important;
 margin-left:50vh;
-margin-top:-10vh;
+margin-top:-13vh;
 max-width:27em!important
 }
 
