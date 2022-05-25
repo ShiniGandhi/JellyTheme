@@ -22,7 +22,7 @@ overflow-y:auto
 color:var(--accent)!important
 }
 
-.emby-button.show-focus:focus {
+.layout-desktop .emby-button.show-focus:focus {
 background:var(--accent)!important
 }
 
