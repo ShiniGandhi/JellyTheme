@@ -1957,6 +1957,10 @@ display:block!important
 font-size:100%!important
 }
 
+.itemsContainer-tv>.portraitCard {
+    width: calc(12.5% - 10px) !important;
+}
+
 .layout-tv .detailSection {
 background-color:#000000de;
 border-radius:105px;
