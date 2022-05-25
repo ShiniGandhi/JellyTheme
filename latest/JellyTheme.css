@@ -1861,7 +1861,7 @@ margin-top:-30%
 margin-top:-25em!important
 }
 
-.layout-desktop .nextUpSection {
+.layout-desktop,.layout-tv .nextUpSection {
 background-color:#000000de;
 border-radius:34px;
 margin-left:80%;
