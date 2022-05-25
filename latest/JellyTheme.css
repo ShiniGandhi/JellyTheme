@@ -2042,7 +2042,9 @@ color:#fff!important
     margin-top: -12vh;
     margin-left: 26vw;
 }
-
+.itemsContainer-tv>.portraitCard {
+    width: calc(12.5% - 10px) !important;
+}
 .layout-tv .itemDetailsGroup {
     font-size: 1.2vw;
     margin-top: -5vh;
