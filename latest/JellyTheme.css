@@ -22,7 +22,7 @@ overflow-y:auto
 color:var(--accent)!important
 }
 
-.layout-desktop .emby-button.show-focus:focus {
+.layout-desktop,.layout-tv .emby-button.show-focus:focus {
 background:var(--accent)!important
 }
 
@@ -2281,11 +2281,14 @@ width:1em
 
 span.material-icons.detailButton-icon.play_arrow {
 color:var(--accent)!important;
-font-size:2.8em!important
+}
+
+.layout-desktop span.material-icons.detailButton-icon.play_arrow {
+    font-size:2.8em!important;
 }
 
 .layout-mobile span.material-icons.detailButton-icon.play_arrow {
-color:#fff!important
+color:#fff!important;
 }
 
 .pageTitle {
