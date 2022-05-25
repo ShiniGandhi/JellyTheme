@@ -2272,6 +2272,12 @@ top:-46vh!important;
 width:67vw!important
 }
 
+.hide-scroll canvas.libassjs-canvas {
+    height: 80vh !important;
+    left: 10vw !important;
+    top: -35vh !important;
+    width: 80vw !important;
+}
 
 .nextUpItems .card.overflowBackdropCard.card-hoverable.card-withuserdata :not(.layout-mobile) {
 width:18vw
