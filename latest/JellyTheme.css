@@ -1961,11 +1961,16 @@ display:block!important
 font-size:100%!important
 }
 
+.layout-tv .emby-button.detailFloatingButton {
+    margin-right: 0 !important;
+    font-size: 1em !important
+}
+
 .layout-tv .detailSection {
 background-color:#000000de;
 border-radius:105px;
 margin-left:-30vw;
-margin-top:-10vh;
+margin-top:-18vh;
 padding:10vh 2vw 2vh 30vw;
 width:44vw!important
 }
