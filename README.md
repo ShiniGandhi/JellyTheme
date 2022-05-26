@@ -49,6 +49,12 @@ If you want Continue Watching, Next Up and the list of seasons to be smaller, as
 ```
 @import url("https://cdn.jsdelivr.net/gh/ShiniGandhi/JellyTheme@latest/latest/Resize-Cards.css");
 ```
+**Keep in mind that for this to work your home screen order must be as follow:**
+* Section 1: My Media
+* Section 2: Continue Watching
+* Section 3 and under: Irrelevant
+
+</br>
 
 If your server's metadata is in Hebrew, Arabic (or any other language that is written right-to-left, import this:</br>
 ```
