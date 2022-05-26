@@ -1677,8 +1677,12 @@ border-color:transparent!important
 background-color:#101010
 }
 
-.raised {
-background:var(--accent)
+.raised:hover {
+background: #a7a7a7 !important;
+}
+
+.emby-button:hover span {
+    color: var(--accent) !important;
 }
 
 .headerButton.headerButtonRight.paper-icon-button-light.headerUserButtonRound {
