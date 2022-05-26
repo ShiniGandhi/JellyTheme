@@ -56,7 +56,7 @@ If your server's metadata is in Hebrew, Arabic (or any other language that is wr
 ```
 
 If you want slimmer Active Devices entries like here (At the moment this only looks good in 1080p, still working on scaling it), Import this: </br>
-![](/screenshots/Slim-ActiveDevices.png)</br>
+![ ](/screenshots/Slim-ActiveDevices.png)</br>
 ```
 @import url("https://cdn.jsdelivr.net/gh/ShiniGandhi/JellyTheme@latest/latest/Slim-ActiveDevices.css");
 ```
