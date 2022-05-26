@@ -1865,7 +1865,18 @@ margin-top:-30%
 margin-top:-25em!important
 }
 
-.layout-desktop,.layout-tv .nextUpSection {
+.layout-desktop, .nextUpSection {
+background-color:#000000de;
+border-radius:34px;
+margin-left:80%;
+margin-right:-30vw;
+margin-top:-27vh;
+padding-bottom:1vh;
+padding-left:2vw;
+padding-right:30vw
+}
+
+.layout-tv .nextUpSection {
 background-color:#000000de;
 border-radius:34px;
 margin-left:80%;
