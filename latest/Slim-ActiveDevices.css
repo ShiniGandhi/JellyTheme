@@ -1,0 +1,59 @@
+.activeSession {
+    max-height: 12vh;
+}
+
+.sessionAppName {
+    display: none !important;
+}
+
+.sessionAppInfo img {
+    margin-left: 8vw;
+}
+
+.sessionAppName {
+    vertical-align: top;
+    max-width: 200px;
+    margin-top: -1vh;
+}
+
+.sessionDeviceName {
+    margin-left: 15vw;
+    text-align: left;
+}
+
+.sessionAppName {
+    margin-top: -1vh;
+}
+
+.sessionAppSecondaryText {
+    margin-top: -2vh;
+}
+
+.sessionNowPlayingInfo {
+    margin-top: -8vh;
+}
+
+.sessionNowPlayingTime {
+    margin-top: -3vh;
+}
+
+.card .cardScalable {
+    max-height: 8vh;
+    margin-bottom: 3.5vh;
+}
+
+.justify-content-center {
+    justify-content: left !important;
+}
+
+.sessionCardButtons {
+    justify-content: right !important;
+}
+
+.flex.align-items-center.justify-content-center {
+    margin-top: -4vh;
+}
+
+.sessionNowPlayingInfo img {
+    margin-top: 2vh;
+}
