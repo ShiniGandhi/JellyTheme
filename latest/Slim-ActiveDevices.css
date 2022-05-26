@@ -43,7 +43,7 @@
 }
 
 .dashboardSection .justify-content-center {
-    justify-content: left !important;
+    justify-content: left;
 }
 
 .sessionCardButtons {
