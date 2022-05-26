@@ -55,6 +55,13 @@ If your server's metadata is in Hebrew, Arabic (or any other language that is wr
 @import url("https://cdn.jsdelivr.net/gh/ShiniGandhi/JellyTheme@latest/latest/RTL-Fix.css");
 ```
 
+If you want slimmer Active Devices entries like here</br>
+![](/screenshots/Slim-ActiveDevices.png)</br>
+Import this: </br>
+```
+@import url("https://cdn.jsdelivr.net/gh/ShiniGandhi/JellyTheme@latest/latest/Slim-ActiveDevices.css");
+```
+
 ## Installation Instuctions - Advanced Extras
 These require modifying some of the JavaScript files that Jellyfin generates. They will be different for every instance, and probably with different names, so make sure you back up these files before making any changes. </br>
 These work best if you're running Jellyfin inside a Docker container, so you can make sure the files won't get overwritten (which can cause issues if something major changes in Jellyfin). </br>
