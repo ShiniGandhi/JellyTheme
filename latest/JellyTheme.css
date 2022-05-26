@@ -1681,7 +1681,7 @@ background-color:#101010
 background: #a7a7a7 !important;
 }
 
-.emby-button:hover span {
+.raised:hover span {
     color: var(--accent) !important;
 }
 
