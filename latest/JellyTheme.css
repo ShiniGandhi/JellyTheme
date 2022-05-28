@@ -362,7 +362,8 @@ width:7vw!important
 
 .layout-tv #castContent .card.overflowPortraitCard {
 font-size:90%!important;
-width:7vw!important
+width:9vw!important
+margin-left: -0.9vw !important
 }
 
 .cardPadder {
@@ -2214,9 +2215,14 @@ color:#fff!important
 }
 
 .layout-tv .nextUpSection.verticalSection.detailVerticalSection {
-margin-left:65vw;
+margin-left:70vw;
 z-index: 10 !important;
-margin-top:-55vh;
+margin-top:-65vh;
+
+}
+
+.layout-tv .itemsContainer-tv>.overflowBackdropCard {
+    width: 18.5vw;
 }
 
 .layout-desktop .childrenItemsContainer.itemsContainer.padded-right.vertical-list {
