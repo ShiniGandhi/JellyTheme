@@ -1969,10 +1969,10 @@ filter:blur(18px) saturate(120%) contrast(120%) brightness(60%)
 
 
 .backdropImage {
-    mask-image: linear-gradient(to right, transparent, black),
-    linear-gradient(to top, transparent, black);
-    -webkit-mask-image: linear-gradient(to right, transparent, black),
-    linear-gradient(to top, transparent, black);
+    mask-image: linear-gradient(to right, transparent 100%, black),
+    linear-gradient(to top, transparent, black 100%);
+    -webkit-mask-image: linear-gradient(to right, transparent 100%, black),
+    linear-gradient(to top, transparent , black 100%);
 }
 
 
