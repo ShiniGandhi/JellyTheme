@@ -18,12 +18,115 @@ overflow-x:hidden;
 overflow-y:auto
 }
 
+.layout-tv .homeLibraryButton:focus,
+.layout-tv .card:focus {
+  transform: none !important;
+}
+
+.layout-tv .card {
+  border-radius: 10px !important;
+  margin: 5px !important;
+}
+
+.layout-tv .card[data-type="Actor"] {
+  padding: 10px;
+  position: relative;
+  height: 16em;
+}
+
+.layout-tv .card::before,
+.layout-tv .emby-tab-button::before,
+.layout-tv .paper-icon-button-light::after,
+.layout-tv .listItem::after,
+.layout-tv .raised::after,
+.layout-tv #itemDetailPage .emby-button::after {
+  box-sizing: border-box;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  border: 4px solid var(--accent);
+  transform: translateY(100%);
+  visibility: hidden;
+  z-index: 1000;
+  will-change: transform;
+  transition: all 0.275s;
+  border-radius: 10px;
+}
+
+.layout-tv .raised::after {
+  transition: transform 0.275s, visiblity 0s 0.275s;
+}
+
+.layout-tv .cardBox {
+  height: 100%;
+  padding: 8px !important;
+}
+
+.layout-tv .card:focus::before,
+.layout-tv .emby-tab-button:focus::before,
+.layout-tv .paper-icon-button-light:focus::after,
+.layout-tv .listItem:focus::after,
+.layout-tv a.show-focus[is="emby-linkbutton"]:focus > .listItem::after,
+.layout-tv .raised:focus::after,
+.layout-tv #itemDetailPage .emby-button:focus::after {
+  transform: translateX(0) !important;
+  visibility: visible;
+}
+
+.layout-tv .card:focus ~ .card::before,
+.layout-tv .emby-tab-button:focus ~ .emby-tab-button::before,
+.layout-tv .paper-icon-button-light:focus ~ .paper-icon-button-light::after,
+.layout-tv .raised:focus ~ .raised::after,
+.layout-tv #itemDetailPage .emby-button:focus ~ .emby-button::after {
+  transform: translateX(-100%) !important;
+}
+
+.layout-tv .verticalSection:focus-within ~ .verticalSection .card::before,
+.layout-tv .verticalSection:focus-within ~ .section5 .card::before,
+.layout-tv .listItem:focus ~ .listItem::after,
+.layout-tv
+  a.show-focus[is="emby-linkbutton"]:focus
+  ~ a.show-focus[is="emby-linkbutton"]
+  > .listItem::after,
+.layout-tv .verticalSection:focus-within ~ .verticalSection .raised::after {
+  transform: translateY(-100%);
+}
+
+.layout-tv .verticalSection:focus-within .card::before,
+.layout-tv *:focus-within > .emby-tab-button::before,
+.layout-tv *:focus-within > .paper-icon-button-light::after,
+.layout-tv *:focus-within > .raised::after,
+.layout-tv #itemDetailPage *:focus-within > .emby-button::after {
+  transform: translateX(100%);
+}
+
+.layout-tv .emby-tab-button:focus,
+.layout-tv .paper-icon-button-light:focus,
+.layout-tv .emby-button:focus {
+  transform: none !important;
+  background: none !important;
+}
+
+.layout-tv a.show-focus[is="emby-linkbutton"]:focus {
+  transform: none !important;
+}
+
+.layout-tv .raised:focus {
+  background: var(--accent) !important;
+  transform: none !important;
+}
+
 .layout-tv .paper-icon-button-light.show-focus:focus {
 color:var(--accent)!important
 }
 
-.layout-desktop,.layout-tv .emby-button.show-focus:focus {
-background:var(--accent)!important
+.layout-desktop,.layout-tv .emby-button.detailButton.show-focus:focus {
+background: transparent !important;
 }
 
 button.detailButton.emby-button:hover {
@@ -96,7 +199,7 @@ background:linear-gradient(to bottom,rgba(0,0,0,0.75),transparent)!important;
 color:#eee;
 height:7.5em;
 pointer-events:none;
-position:relative;
+position:fixed !important;
 transition:opacity .3s ease-out;
 z-index:1
 }
@@ -145,28 +248,15 @@ background:linear-gradient(-135deg,rgba(40,40,40) 50%,transparent 50%)
 }
 
 button.emby-tab-button.emby-button.emby-tab-button-active:hover {
-color:var(--accent)!important
+color:var(--accent)!important;
 }
 
 .emby-tab-button.show-focus:focus,.emby-tab-button:hover {
-color:var(--accent)!important
+color:white !important;
 }
 
 div#itemBackdrop {
--webkit-mask-composite:source-in;
--webkit-mask-image:linear-gradient(to right,transparent,black),linear-gradient(to top,transparent,black);
-background-attachment:scroll;
-background-position:top right;
-background-size:cover;
-height:100%!important;
-mask-composite:source-in;
-mask-composite:intersect;
-mask-image:linear-gradient(to right,transparent,black),linear-gradient(to top,transparent,black);
-position:absolute;
-right:0;
-position:fixed!important;
-width:100%!important;
-z-index: -1;
+  display: none !important;
 }
 
 div#itemBackdrop::after {
@@ -1124,6 +1214,10 @@ margin-top:10vh;
 width:95vw!important
 }
 
+.layout-tv h3.itemName.infoText.subtitle {
+    font-size: 68px;
+}
+
 .detailImageContainer .card {
 display:none
 }
@@ -1457,7 +1551,7 @@ width:100%
 }
 
 .layout-tv #itemDetailPage .itemName.infoText.parentNameLast {
-display:block
+display:block !important;
 }
 
 .listItem-withContentWrapper:hover
@@ -1817,6 +1911,27 @@ top:10vh;
 width:35vw
 }
 
+.layout-desktop :not(.hide) + .detailPageWrapperContainer .parentName,.layout-desktop :not(.hide) + .detailPageWrapperContainer .parentNameLast,.layout-desktop :not(.hide) + .detailPageWrapperContainer .parentName > *,.layout-desktop :not(.hide) + .detailPageWrapperContainer .parentNameLast > * {
+background:transparent;
+display:block;
+font-size:0;
+height:20vh;
+left:5vw;
+position:fixed;
+top:10vh;
+width:35vw
+}
+
+.layout-tv :not(.hide) + .detailPageWrapperContainer .parentName,.layout-tv  :not(.hide) + .detailPageWrapperContainer .parentNameLast,.layout-tv  :not(.hide) + .detailPageWrapperContainer .parentName > *,.layout-tv  :not(.hide) + .detailPageWrapperContainer .parentNameLast > * {
+    background: transparent;
+    height: 20vh;
+    top: -6vh;
+    width: 35vw;
+    margin-top: 6vh !important;
+    margin-bottom: -3vh !important;
+    font-size: 156px;
+}
+
 .layout-mobile #itemDetailPage .parentName,.layout-mobile #itemDetailPage .parentNameLast {
 display:block
 }
@@ -1848,8 +1963,16 @@ width:calc(100% - 10vw)
 }
 
 
-.backdropImage {
+.withSectionTabs .backdropImage {
 filter:blur(18px) saturate(120%) contrast(120%) brightness(60%)
+}
+
+
+.backdropImage {
+    mask-image: linear-gradient(to right, transparent, black),
+    linear-gradient(to top, transparent, black);
+    -webkit-mask-image: linear-gradient(to right, transparent, black),
+    linear-gradient(to top, transparent, black);
 }
 
 
@@ -1985,7 +2108,7 @@ font-size:100%!important
 background-color:#000000de;
 border-radius:105px;
 margin-left:-30vw;
-margin-top:-18vh;
+margin-top:-41vh;
 padding:10vh 2vw 2vh 30vw;
 width:44vw!important
 }
@@ -2027,24 +2150,17 @@ display:none
 opacity:1
 }
 
-.layout-tv .originalTitle {
-display:block
-}
-
 .layout-tv #itemDetailPage:not(.noBackdrop) .detailPagePrimaryContainer {
-height:40vh
+height:80vh;
+margin-top: -30vh;
 }
 
 .layout-tv #itemDetailPage .detailLogo {
-margin-top:0!important
+margin-top: 0 !important;
 }
 
 .layout-tv .infoText {
-margin-top:-2em!important
-}
-
-.layout-tv .detailPageSecondaryContainer {
-margin-top:-8em!important
+margin-top: 0em!important;
 }
 
 .layout-tv .emby-button.detailFloatingButton {
@@ -2077,7 +2193,9 @@ color:#fff!important
 }
 
 .layout-tv .mainDetailButtons {
-    margin-left: 3vh!important;
+    margin-left: 1vw !important;
+    margin-top: -1vh !important;
+    font-size: 45px;
 }
 
 .layout-tv .listItemImage-large-tv {
@@ -2096,7 +2214,8 @@ color:#fff!important
 
 .layout-tv .nextUpSection.verticalSection.detailVerticalSection {
 margin-left:65vw;
-margin-top:-55vh
+z-index: 10 !important;
+margin-top:-55vh;
 }
 
 .layout-desktop .childrenItemsContainer.itemsContainer.padded-right.vertical-list {
