@@ -1,26 +1,32 @@
-
 .dashboardSection .card .cardScalable {
-    max-height: 6pc;
+    max-height: 9pc;
     margin-bottom: 6pc;
 }
+
 .dashboardSection .flex.align-items-center.justify-content-center {
-    margin-top: -4pc;
+    margin-top: -11pc;
 }
+
 .dashboardSection .sessionCardButtons.flex.align-items-center.justify-content-center {
-    margin-top: -7pc;
+    margin-top: -11pc !important;
 }
+
 .dashboardSection .flex.align-items-center.justify-content-center {
-    margin-top: -2pc;
+    margin-top: -11vh;
 }
+
 .sessionNowPlayingInfo {
-    margin-top: -7pc;
+    margin-top: -6pc;
 }
+
 .sessionNowPlayingTime {
     margin-top: -3pc;
 }
+
 .dashboardSection .cardContent.defaultCardBackground.defaultCardBackground1 {
-    height: 5pc;
+    height: 9pc;
 }
+
 .dashboardSection .cardBox.visualCardBox {
     max-height: 9pc;
 }
@@ -61,10 +67,11 @@
 }
 
 .dashboardSection .flex.align-items-center.justify-content-center {
-    margin-top: -4vh;
+    margin-top: -7vh;
 }
 
 .sessionNowPlayingInfo img {
-    margin-top: 1pc;
-    max-height: 50px !important;
+  margin-top: 1pc;
+  max-height: 18pc !important;
+  width: 10pc !important;
 }
