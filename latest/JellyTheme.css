@@ -1928,10 +1928,10 @@ width:35vw
     height: 20vh;
     top: 10vh;
     position: static;
-    width: 35vw;
-    margin-top: 6vh !important;
+    width: 84vw;
+    margin-top: 8vh !important;
     margin-bottom: -3vh !important;
-    font-size: 156px;
+    font-size: 92px;
 }
 
 .layout-mobile #itemDetailPage .parentName,.layout-mobile #itemDetailPage .parentNameLast {
