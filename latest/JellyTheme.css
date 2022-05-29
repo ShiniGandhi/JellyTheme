@@ -34,6 +34,14 @@ overflow-y:auto
   height: 16em;
 }
 
+.layout-tv .card[data-type="Actor"] .cardText-first {
+    height: 35px;
+}
+
+.layout-tv .card[data-type="Actor"] .cardText-secondary {
+    height: 35px;
+}
+
 .layout-tv .card::before,
 .layout-tv .emby-tab-button::before,
 .layout-tv .paper-icon-button-light::after,
@@ -361,9 +369,10 @@ width:7vw!important
 }
 
 .layout-tv #castContent .card.overflowPortraitCard {
-font-size:90%!important;
-width:9vw!important;
-margin-left: -0.9vw !important
+    font-size: 90%!important;
+    width: 10vw!important;
+    margin-left: -1.6vw !important;
+    height: 24vh;
 }
 
 .cardPadder {
@@ -1211,12 +1220,22 @@ width:fit-content!important
 height:-webkit-fit-content;
 height:-moz-fit-content;
 height:fit-content;
-margin-top:10vh;
-width:95vw!important
+margin-top:-28vh;
+height: 80vh;
+width:95vw!important;
 }
 
 .layout-tv h3.itemName.infoText.subtitle {
     font-size: 68px;
+    margin-top: 0pc !important;
+}
+
+.layout-tv .itemName {
+    margin: 2.5em 0!important;
+}
+
+.layout-tv .itemMiscInfo.itemMiscInfo-primary {
+    margin-top: -7vh;
 }
 
 .detailImageContainer .card {
@@ -1419,7 +1438,8 @@ height:100%
 }
 
 .skinHeader {
-background:linear-gradient(180deg,black,transparent)!important
+  background:linear-gradient(180deg,black,transparent)!important;
+  position: fixed !important;
 }
 
 .skinHeader.focuscontainer-x.skinHeader-withBackground.skinHeader-blurred.semiTransparent {
@@ -1924,15 +1944,17 @@ width:35vw
 }
 
 .layout-tv :not(.hide) + .detailPageWrapperContainer .parentName,.layout-tv  :not(.hide) + .detailPageWrapperContainer .parentNameLast,.layout-tv  :not(.hide) + .detailPageWrapperContainer .parentName > *,.layout-tv  :not(.hide) + .detailPageWrapperContainer .parentNameLast > * {
-    background: transparent;
-    height: 20vh;
-    top: 10vh;
-    position: static;
-    width: 84vw;
-    margin-top: 8vh !important;
-    margin-bottom: -3vh !important;
-    font-size: 92px;
+  background: transparent;
+  height: 20vh;
+  top: 10vh;
+  position: static;
+  width: 84vw;
+  margin-top: 2vh !important;
+  margin-bottom: -6vh !important;
+  font-size: 92px;
 }
+
+
 
 .layout-mobile #itemDetailPage .parentName,.layout-mobile #itemDetailPage .parentNameLast {
 display:block
@@ -1980,6 +2002,10 @@ filter:blur(18px) saturate(120%) contrast(120%) brightness(60%)
 
 div#itemDetailPage {
 background:#00000000
+}
+
+.layout-desktop div#itemDetailPage {
+    margin-top: 2vh !important;
 }
 
 .layout-desktop .collectionItems {
@@ -2110,7 +2136,7 @@ font-size:100%!important
 background-color:#000000de;
 border-radius:105px;
 margin-left:-30vw;
-margin-top:-41vh;
+margin-top:-47vh;
 padding:10vh 2vw 2vh 30vw;
 width:44vw!important
 }
@@ -2184,10 +2210,14 @@ color:#fff!important
     width: calc(12.5% - 10px) !important;
 }
 .layout-tv .itemDetailsGroup {
-    font-size: 1.2vw;
+    font-size: 1vw;
     margin-top: -5vh;
     max-width: 23vw;
     margin-bottom: 6%;
+}
+
+.layout-tv h3.tagline {
+    font-size: 2.5vh;
 }
 
 .emby-button.show-focus:focus span.material-icons.detailButton-icon.play_arrow {
@@ -2196,8 +2226,8 @@ color:#fff!important
 
 .layout-tv .mainDetailButtons {
     margin-left: 1vw !important;
-    margin-top: -1vh !important;
-    font-size: 45px;
+    margin-top: -3vh !important;
+    font-size: 4vh;
 }
 
 .layout-tv .listItemImage-large-tv {
@@ -2215,10 +2245,11 @@ color:#fff!important
 }
 
 .layout-tv .nextUpSection.verticalSection.detailVerticalSection {
-margin-left:70vw;
-z-index: 10 !important;
-margin-top:-65vh;
-
+  margin-left: 70vw;
+  z-index: 10 !important;
+  margin-top: -74vh;
+  margin-bottom: 40vh !important;
+  margin-right: -100vw !important;
 }
 
 .layout-tv .itemsContainer-tv>.overflowBackdropCard {
@@ -2380,8 +2411,28 @@ margin-bottom:6em;
 overflow-x:clip;
 }
 
+.layout-tv p.overview {
+    font-size: 1.2pc;
+    margin-top: -3vh;
+}
+
+.layout-tv .overview-controls {
+    font-size: 1.2pc !important;
+    margin-top: -1vh;
+}
+
+.layout-tv p#seriesAirTime {
+    font-size: 1pc;
+}
+
+.layout-tv h1.itemName.infoText.parentNameLast.withOriginalTitle {
+    margin-bottom: 0vh !important;
+    margin-top: 6vh !important;
+}
+
 .layout-tv .trackSelections {
-max-width:29em
+  max-width:29em;
+  font-size: 1.3vh !important
 }
 
 .layout-mobile .detailPageContent {
