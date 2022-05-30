@@ -75,3 +75,12 @@
   max-height: 18pc !important;
   width: 10pc !important;
 }
+
+.playbackProgress>div {
+    background-color: var(--accent) !important;
+}
+
+.transcodingProgress>div {
+    background-color: grey !important;
+
+}

@@ -308,9 +308,21 @@ margin-top:0!important
 }
 
 .layout-mobile #itemDetailPage .detailVerticalSection {
-background:transparent;
-padding:0;
-width:100%
+width:100%;
+}
+
+.layout-mobile .nextUpSection {
+    margin-top: -72vh !important;
+    margin-bottom: 62vh !important;
+    margin-left: 56%;
+}
+
+.layout-mobile canvas.libassjs-canvas {
+    height: 30vh!important;
+    left: -22vw!important;
+    top: -30vh!important;
+    width: 140vw!important;
+    z-index: 1 !important;
 }
 
 .itemName.parentNameLast {
@@ -405,6 +417,10 @@ height:2.5em
 
 .cardContent-button,.cardContent-shadow,.itemDetailImage,.cardOverlayButton-hover,.cardOverlayContainer,.cardImageContainer,.cardPadder,.listItemImage,.listItemImageButton,.listItemButton,.headerButton,.paper-icon-button-light,.innerCardFooter,.blurhash-canvas,.actionSheetMenuItem:hover,.dialog,.countIndicator,.playedIndicator,.listItem-border {
 border-radius:6px!important
+}
+
+.card:focus .cardBox.visualCardBox, .card:focus .cardBox:not(.visualCardBox) .cardScalable {
+    border-color: transparent !important;
 }
 
 .osdPoster img {
