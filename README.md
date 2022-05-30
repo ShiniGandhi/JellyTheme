@@ -34,6 +34,8 @@ display:block!important;
 
 ### Optional
 These must be added **before** the `:root {` line to work. </br>
+
+#### Cleaner UI
 If you want to have a cleaner UI, add this:</br>
 The following is removed: </br>
  - Play trailer button </br>
@@ -45,6 +47,8 @@ The following is removed: </br>
 @import url("https://cdn.jsdelivr.net/gh/ShiniGandhi/JellyTheme@latest/latest/Cleaner-UI.css");
 ```
 
+#### Resize Some Elements
+
 If you want Continue Watching, Next Up and the list of seasons to be smaller, as shown in my screenshots, import this:</br>
 ```
 @import url("https://cdn.jsdelivr.net/gh/ShiniGandhi/JellyTheme@latest/latest/Resize-Cards.css");
@@ -54,12 +58,15 @@ If you want Continue Watching, Next Up and the list of seasons to be smaller, as
 * Section 2: Continue Watching
 * Section 3 and under: Irrelevant
 
-</br>
+
+#### Right-to-Left Support
 
 If your server's metadata is in Hebrew, Arabic (or any other language that is written right-to-left, import this:</br>
 ```
 @import url("https://cdn.jsdelivr.net/gh/ShiniGandhi/JellyTheme@latest/latest/RTL-Fix.css");
 ```
+
+#### Slim Active Devices
 
 If you want slimmer Active Devices entries like here (At the moment this ~~only looks good in 1080p~~ looks great in 4K and 1440p, but not perfect in 1080p (how the turntables huh), still working on scaling it), Import this: </br>
 ![ ](/screenshots/Slim-ActiveDevices.png)</br>
@@ -67,7 +74,7 @@ If you want slimmer Active Devices entries like here (At the moment this ~~only 
 @import url("https://cdn.jsdelivr.net/gh/ShiniGandhi/JellyTheme@latest/latest/Slim-ActiveDevices.css");
 ``` 
 </br>
-**NOTE**: The logo will be pretty low resolution because it's generating a low resolution image to begin with. If you want better quality logos, a parameter needs to be changed in `dashboard-dashboard.********************.bundle.js` (which I'll add later). </br>
+NOTE: The logo will be pretty low resolution because it's generating a low resolution image to begin with. If you want better quality logos, a parameter needs to be changed in `dashboard-dashboard.********************.bundle.js` (which I'll add later). </br>
 It's not perfect, but it's also not too big of a deal imo.
 
 ## Installation Instuctions - Advanced Extras
