@@ -65,7 +65,10 @@ If you want slimmer Active Devices entries like here (At the moment this only lo
 ![ ](/screenshots/Slim-ActiveDevices.png)</br>
 ```
 @import url("https://cdn.jsdelivr.net/gh/ShiniGandhi/JellyTheme@latest/latest/Slim-ActiveDevices.css");
-```
+``` 
+</br>
+**NOTE**: The logo will be pretty low resolution because it's generating a low resolution image to begin with. If you want better quality logos, a parameter needs to be changed in `dashboard-dashboard.********************.bundle.js` (which I'll add later). </br>
+It's not perfect, but it's also not too big of a deal imo.
 
 ## Installation Instuctions - Advanced Extras
 These require modifying some of the JavaScript files that Jellyfin generates. They will be different for every instance, and probably with different names, so make sure you back up these files before making any changes. </br>
