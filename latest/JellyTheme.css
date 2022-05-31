@@ -2273,62 +2273,62 @@ color:#fff!important
 }
 
 .layout-desktop .childrenItemsContainer.itemsContainer.padded-right.vertical-list {
-margin-top:-5em!important
+margin-top:-5em!important;
 }
 
 .backgroundContainer {
-background-color:#000!important
+background-color:#000!important;
 }
 
 .layout-desktop .emby-scroller-container {
-margin-top:2em
+margin-top:2em;
 }
 
 .layout-mobile .card,.homeLibraryButton {
-max-width:30%
+max-width:30%;
 }
 
 .layout-mobile p.overview {
-font-size:81%
+font-size:81%;
 }
 
 .layout-mobile .hide + .detailPageWrapperContainer .detailPagePrimaryContent {
-min-height:6vh!important
+min-height:6vh!important;
 }
 
 .layout-mobile .itemDetailsGroup {
-font-size:76%
+font-size:76%;
 }
 
 .layout-mobile .trackSelections {
-font-size:71%
+font-size:71%;
 }
 
 .layout-mobile .itemMiscInfo,.layout-mobile .itemName,.layout-mobile .mainDetailButtons,.layout-mobile .parentName {
-font-size:74%
+font-size:74%;
 }
 
 .layout-mobile .backgroundContainer {
-background-color:#00000000!important
+background-color:#00000000!important;
 }
 
 .layout-mobile .detailSectionContent a {
 color:var(--accent);
-font-size:80%
+font-size:80%;
 }
 
 .layout-mobile p#seriesAirTime {
 font-size:68%;
-margin-top:-1em
+margin-top:-1em;
 }
 
 .layout-mobile .paging {
-width:50%
+width:50%;
 }
 
 .layout-mobile .primaryImageWrapper > img {
 display:none!important;
-z-index:-3
+z-index:-3;
 }
 
 .layout-mobile #itemDetailPage .detailLogo {
@@ -2336,48 +2336,48 @@ display:block!important;
 margin-bottom:-50%!important;
 margin-top:11%;
 min-width:80%!important;
-z-index:5!important
+z-index:5!important;
 }
 
 .layout-mobile #itemDetailPage .itemName.infoText.parentNameLast {
-display:none!important
+display:none!important;
 }
 
 .taskProgressInner {
-background:var(--accent)
+background:var(--accent);
 }
 
 
 .appfooter {
-z-index:130
+z-index:130;
 }
 
 .paper-icon-button-light:hover:not(:disabled) {
-color:#fff!important
+color:#fff!important;
 }
 
 button.autoSize.paper-icon-button-light.buttonActive {
-color:var(--accent)!important
+color:var(--accent)!important;
 }
 
 .ratingbutton-icon-withrating {
-color:var(--accent)
+color:var(--accent) !important;
 }
 
 .buttonActive {
-color:var(--accent)!important
+color:var(--accent)!important;
 }
 
 .iconOsdProgressInner {
-background:var(--accent)
+background:var(--accent);
 }
 
 .endsAtText {
-display:none!important
+display:none!important;
 }
 
 .endsAt {
-display:none!important
+display:none!important;
 }
 
 .htmlvideoplayer {
@@ -2396,24 +2396,24 @@ display:none!important
 
 .layout-mobile .htmlvideoplayer {
 margin-top:-20em!important;
-object-fit:contain
+object-fit:contain;
 }
 
 .layout-mobile .hide-scroll .htmlvideoplayer {
-margin-top:0!important
+margin-top:0!important;
 }
 
 h3.tagline {
-margin-top:-1vh
+margin-top:-1vh;
 }
 
 
 .layout-desktop .detailPagePrimaryContent {
-margin-bottom:1em!important
+margin-bottom:1em!important;
 }
 
 div#castCollapsible {
-margin-bottom:2em
+margin-bottom:2em;
 }
 
 .layout-desktop div#castCollapsible {
@@ -2448,50 +2448,50 @@ overflow-x:clip;
 
 .layout-tv .trackSelections {
   max-width:29em;
-  font-size: 1.3vh !important
+  font-size: 1.3vh !important;
 }
 
 .layout-mobile .detailPageContent {
 background:linear-gradient(0deg,black 70%,#00000077 96%,transparent);
-padding:0!important
+padding:0!important;
 }
 
 .layout-mobile canvas.libassjs-canvas {
-z-index:3
+z-index:3;
 }
 
 .layout-desktop .trackSelections {
 font-size:small!important;
 margin-left:50vh;
 margin-top:-13vh;
-max-width:27em!important
+max-width:27em!important;
 }
 
 .writersGroup {
-display:none
+display:none;
 }
 
 .mediaInfoCriticRatingRotten {
-display:none
+display:none;
 }
 
 .layout-desktop .trackSelections .selectContainer .selectLabel {
-margin:0 -1.5em 0 0
+margin:0 -1.5em 0 0;
 }
 
 .detailsGroupItem .label,.trackSelections .selectContainer .selectLabel {
-margin:0 -1.4em 0 0
+margin:0 -1.4em 0 0;
 }
 
 .layout-desktop .mainDetailButtons {
-margin-left:0!important
+margin-left:0!important;
 }
 
 .detailButton-icon {
 color:#b3adad;
 font-size:1.6em!important;
 height:1em;
-width:1em
+width:1em;
 }
 
 span.material-icons.detailButton-icon.play_arrow {
@@ -2507,14 +2507,14 @@ color:#fff!important;
 }
 
 .pageTitle {
-font-size:165%
+font-size:165%;
 }
 
 canvas.libassjs-canvas {
 height:60vh!important;
 left:42vw!important;
 top:-46vh!important;
-width:67vw!important
+width:67vw!important;
 }
 
 .hide-scroll canvas.libassjs-canvas {
@@ -2525,7 +2525,7 @@ width:67vw!important
 }
 
 .nextUpItems .card.overflowBackdropCard.card-hoverable.card-withuserdata :not(.layout-mobile) {
-width:18vw
+width:18vw;
 }
 
 .playstatebutton-icon-played {
