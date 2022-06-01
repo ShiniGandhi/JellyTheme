@@ -1,0 +1,69 @@
+/* These are just some things I add to my server, so I can clean up my Custom CSS section.*/
+/*------------------CAST OFFSET------------------*/
+.layout-desktop div#castCollapsible {
+margin-bottom:6em;
+margin-top:-22vh;
+width:68vw;
+}
+
+.layout-desktop div#childrenCollapsible {
+margin-top:4em;
+}
+
+.layout-tv div#castCollapsible {
+margin-top:-68vh !important;
+width:68vw !important;
+}
+
+/*------------------HDR INDICATOR------------------*/
+.mediaSourceIndicator {
+background-color:#282828;
+color:#0000;
+font-size:68%;
+padding-left:4px;
+padding-right:11px
+}
+
+.mediaSourceIndicator:after {
+color:#fff;
+content:"HDR"!important
+}
+
+/*------------------DISPLAY SETTINGS------------------*/
+#displayPreferencesPage .selectContainer {
+    display: none;
+}
+#displayPreferencesPage .selectContainer.fldDisplayMode {
+    display: block !important;
+}
+#displayPreferencesPage .checkboxContainer {
+    display: none;
+}
+#displayPreferencesPage .inputContainer {
+    display: none;
+}
+a.lnkDisplayPreferences.listItem-border.emby-button {
+    display: block!important;
+}
+
+/*------------------SLIMMER LOGS------------------*/
+span.listItemIcon.material-icons.notifications {
+    display: none !important;
+}
+
+.listItemBody {
+    padding: 0 !important;
+}
+
+.layout-mobile .dashboardSections {
+    grid-auto-columns: auto;
+    max-width: 82vw;
+}
+
+.layout-mobile .listItemBodyText {
+    font-size: 14px !important;
+}
+
+.layout-mobile #serverName, #versionNumber, #operatingSystem {
+    margin-bottom: -1.5vh;
+}
