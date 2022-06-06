@@ -1960,9 +1960,9 @@ width:35vw
   top: 10vh;
   position: static;
   width: 84vw;
-  margin-top: 2vh !important;
+  margin-top: 4vh !important;
   margin-bottom: -6vh !important;
-  font-size: 67px;
+  font-size: 68px;
 }
 
 
@@ -2438,7 +2438,7 @@ overflow-x:clip;
 
 .layout-tv h1.itemName.infoText.parentNameLast.withOriginalTitle {
     margin-bottom: -2vh !important;
-    margin-top: 6vh !important;
+    margin-top: 8vh !important;
 }
 
 .layout-tv .trackSelections {
@@ -2510,6 +2510,10 @@ height:60vh!important;
 left:42vw!important;
 top:-46vh!important;
 width:67vw!important;
+}
+
+.withSectionTabs canvas.libassjs-canvas {
+    display: none !important;
 }
 
 .hide-scroll canvas.libassjs-canvas {
