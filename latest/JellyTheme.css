@@ -1147,11 +1147,6 @@ border-radius:var(--rounding)!important;
 text-shadow:0 0 10px #141414
 }
 
-#indexPage .homeLibraryButton {
-background:#101010!important;
-transition:.2s
-}
-
 .raised {
 background:var(--accent)!important;
 border-radius:var(--rounding)!important
@@ -2100,12 +2095,12 @@ display:none
 }
 
 #indexPage .homeLibraryButton {
-background:#00000054!important
+  background:#222222!important;
+  transition: .2s;
 }
 
 .backdropContainer {
-display:block!important;
-z-index:-2!important
+display:none !important;
 }
 
 .itemDetailPage.backdropContainer {
