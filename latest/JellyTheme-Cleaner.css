@@ -269,11 +269,29 @@ color:white !important;
 }
 
 div#itemBackdrop {
-  display: none !important;
+    display: block !important;
+}
+
+div#itemBackdrop {
+  height: 100% !important;
+  z-index: -4;
+  position: absolute;
+  background-position: top right;
+  right: 0;
+  width: 40vw;
+  background-size: cover;
+  background-attachment: scroll;
+  mask-image: linear-gradient(to right, transparent, black),
+    linear-gradient(to top, transparent, black);
+  -webkit-mask-image: linear-gradient(to right, transparent, black),
+    linear-gradient(to top, transparent, black);
+  mask-composite: source-in;
+  -webkit-mask-composite: source-in;
+  mask-composite: intersect;
 }
 
 div#itemBackdrop::after {
-display:none
+  display: none;
 }
 
 .detailPageSecondaryContainer {
@@ -1995,7 +2013,7 @@ width:calc(100% - 10vw)
 
 
 .withSectionTabs .backdropImage {
-filter:blur(18px) saturate(120%) contrast(120%) brightness(60%)
+display: none !important;
 }
 
 
@@ -2093,14 +2111,6 @@ display:none
 #indexPage .homeLibraryButton {
   background:#222222!important;
   transition: .2s;
-}
-
-.backdropContainer {
-display:none !important;
-}
-
-.backdropImage.displayingBackdropImage.backdropImageFadeIn{
-  background: none !important;
 }
 
 .itemDetailPage.backdropContainer {
