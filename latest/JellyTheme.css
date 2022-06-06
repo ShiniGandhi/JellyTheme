@@ -2095,12 +2095,12 @@ display:none
 }
 
 #indexPage .homeLibraryButton {
-  background:#222222!important;
-  transition: .2s;
+background:#00000054!important;
+transition:.2s
 }
 
 .backdropContainer {
-display:none !important;
+display:block !important;
 }
 
 .itemDetailPage.backdropContainer {
