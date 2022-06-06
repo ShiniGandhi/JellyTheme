@@ -2381,12 +2381,16 @@ display:none!important;
   object-fit:cover;
   padding:0!important;
   width:100%;
-  filter: brightness(0.8);
+    mask-image: linear-gradient(to right, transparent 100%, black),
+    linear-gradient(to top, transparent, black 100%);
+    -webkit-mask-image: linear-gradient(to right, transparent 100%, black),
+    linear-gradient(to top, transparent , black 100%);
 }
 
 .hide-scroll .htmlvideoplayer {
   object-fit:contain;
-  filter: brightness(1) !important;
+  mask-image: none !important;
+  -webkit-mask-image: none !important;
 }
 
 .layout-mobile .htmlvideoplayer {
