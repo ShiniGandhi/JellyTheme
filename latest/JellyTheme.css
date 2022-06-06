@@ -1967,7 +1967,7 @@ width:35vw
   width: 84vw;
   margin-top: 2vh !important;
   margin-bottom: -6vh !important;
-  font-size: 92px;
+  font-size: 67px;
 }
 
 
@@ -2152,7 +2152,7 @@ font-size:100%!important
 background-color:#000000de;
 border-radius:105px;
 margin-left:-30vw;
-margin-top:-47vh;
+margin-top:-50vh;
 padding:10vh 2vw 2vh 30vw;
 width:44vw!important
 }
@@ -2200,7 +2200,7 @@ margin-top: -30vh;
 }
 
 .layout-tv #itemDetailPage .detailLogo {
-margin-top: 0 !important;
+margin-top: 10px !important;
 }
 
 .layout-tv .infoText {
@@ -2233,7 +2233,7 @@ color:#fff!important
 }
 
 .layout-tv h3.tagline {
-    font-size: 2.5vh;
+    font-size: 1.9pc;
 }
 
 .emby-button.show-focus:focus span.material-icons.detailButton-icon.play_arrow {
@@ -2428,7 +2428,7 @@ overflow-x:clip;
 }
 
 .layout-tv p.overview {
-    font-size: 1.2pc;
+    font-size: 1.5pc;
     margin-top: -3vh;
 }
 
@@ -2442,7 +2442,7 @@ overflow-x:clip;
 }
 
 .layout-tv h1.itemName.infoText.parentNameLast.withOriginalTitle {
-    margin-bottom: 0vh !important;
+    margin-bottom: -2vh !important;
     margin-top: 6vh !important;
 }
 
