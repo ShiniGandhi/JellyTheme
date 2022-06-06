@@ -18,6 +18,11 @@ overflow-x:hidden;
 overflow-y:auto
 }
 
+.card.show-animation:focus>.cardBox {
+    -webkit-transform: none !important;
+    transform: none !important;
+}
+
 .layout-tv .homeLibraryButton:focus,
 .layout-tv .card:focus {
   transform: none !important;
