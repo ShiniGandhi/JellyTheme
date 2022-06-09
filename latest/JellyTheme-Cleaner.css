@@ -18,6 +18,10 @@ overflow-x:hidden;
 overflow-y:auto
 }
 
+progress::-moz-progress-bar { background: var(--accent); color: var(--accent); }
+progress::-webkit-progress-value { background: var(--accent); color: var(--accent);}
+progress { color: var(--accent); }
+
 .card.show-animation:focus>.cardBox {
     -webkit-transform: none !important;
     transform: none !important;
@@ -269,10 +273,7 @@ color:white !important;
 }
 
 div#itemBackdrop {
-    display: block !important;
-}
-
-div#itemBackdrop {
+  display: block !important;
   height: 100% !important;
   z-index: -4;
   position: absolute;
@@ -281,10 +282,11 @@ div#itemBackdrop {
   width: 40vw;
   background-size: cover;
   background-attachment: scroll;
-  mask-image: linear-gradient(to right, transparent, black),
-    linear-gradient(to top, transparent, black);
-  -webkit-mask-image: linear-gradient(to right, transparent, black),
-    linear-gradient(to top, transparent, black);
+  mask-image: linear-gradient(to right, #00000008, black),
+  linear-gradient(to top, black, black);
+  -webkit-mask-image: linear-gradient(to right, #00000008, black),
+  linear-gradient(to top, black, black);
+  position: fixed;
   mask-composite: source-in;
   -webkit-mask-composite: source-in;
   mask-composite: intersect;
@@ -803,6 +805,10 @@ background-color:rgba(0,0,0,0)!important
 
 .button-link {
 color:#fff!important
+}
+
+.button-link:hover {
+    color: var(--accent) !important;
 }
 
 .formDialogHeader {
@@ -2391,10 +2397,14 @@ display:none!important;
   object-fit:cover;
   padding:0!important;
   width:100%;
+}
+
+:not(.layout-mobile) body:not(.idle) .htmlvideoplayer {
     mask-image: linear-gradient(to right, transparent 100%, black),
     linear-gradient(to top, transparent, black 100%);
     -webkit-mask-image: linear-gradient(to right, transparent 100%, black),
     linear-gradient(to top, transparent , black 100%);
+    transition: 2500ms;
 }
 
 .hide-scroll .htmlvideoplayer {
@@ -2523,7 +2533,7 @@ color:#fff!important;
 font-size:165%;
 }
 
-canvas.libassjs-canvas {
+:not(.layout-mobile) body:not(.idle) canvas.libassjs-canvas {
 height:60vh!important;
 left:42vw!important;
 top:-46vh!important;

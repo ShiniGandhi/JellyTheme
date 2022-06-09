@@ -1,0 +1,24 @@
+:not(.layout-mobile) body.idle .detailLogo {
+    transition: 2500ms;
+    opacity: 0.3;
+}
+:not(.layout-mobile) body.idle .detailPageWrapperContainer {
+    transition: 2500ms;
+    opacity: 0;
+}
+/*----------------ADD TO itemDetails-index-html.********************.bundle.js FOR THIS TO WORK
+// IDLE DETECT //
+!function(n){"use strict";n.fn.idle=function(e){var t,i,o={idle:6e4,events:"mousemove keydown mousedown touchstart",onIdle:fun$
+
+$(document).idle({
+  onIdle: function(){
+    document.body.classList.add("idle");
+    document.body.classList.add("hide-scroll");
+  },
+ onActive: function(){
+    document.body.classList.remove("idle");
+    document.body.classList.remove("hide-scroll");
+ },
+  idle: 20000
+})
+*/
