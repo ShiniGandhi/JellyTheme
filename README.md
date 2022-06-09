@@ -133,7 +133,7 @@ width:68vw;
 7. Clear browser cache.
 
 
-### Hide Details While Watching Backdrop
+#### Hide Details While Watching Backdrop
 If you want item details to hide after a certain amount of time while watching a video backdrop as shown below, do the following:</br>
 ![ ](/screenshots/IdleHide.png)</br>
 1. Open your `itemDetails-index-html.********************.bundle.js` file (asterisks are replaced with something specific to your instance, but this never changes after initial setup).
