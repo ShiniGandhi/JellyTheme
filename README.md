@@ -5,7 +5,7 @@ This is a theme based on [JellyFlix](https://github.com/prayag17/JellyFlix), whi
 
 The theme is optimized for 1080p, but it should work well on 720p, 768p, 1440p and 4K. </br>
 1440p might be okay, but for best results zoom 125% should be used.</br>
-4K is needs to be at 150% zoom. </br>
+4K is needs to be at 125% or 150% zoom. </br>
 I'm still looking into solutions for that.
 
 ## Installation Instuctions - Basic
@@ -74,8 +74,11 @@ If you want slimmer Active Devices entries like here (At the moment this ~~only 
 @import url("https://cdn.jsdelivr.net/gh/ShiniGandhi/JellyTheme@latest/latest/Slim-ActiveDevices.css");
 ``` 
 </br>
-NOTE: The logo will be pretty low resolution because it's generating a low resolution image to begin with. If you want better quality logos, a parameter needs to be changed in `dashboard-dashboard.********************.bundle.js` (which I'll add later). </br>
-It's not perfect, but it's also not too big of a deal imo.
+NOTE: The logo will be pretty low resolution because it's generating a low resolution image to begin with. If you want better quality logos, perform the following:</br>
+
+1. Open your `dashboard-dashboard.********************.bundle.js` file (asterisks are replaced with something specific to your instance, but this never changes after initial setup).
+2. Find `tag:a.ParentLogoImageTag` and set the values of `maxHeight` and `maxWidth` to `500`.
+3. Clear browser cache.</br>
 
 ## Installation Instuctions - Advanced Extras
 These require modifying some of the JavaScript files that Jellyfin generates. They will be different for every instance, and probably with different names, so make sure you back up these files before making any changes. </br>
@@ -129,6 +132,18 @@ width:68vw;
 ```
 7. Clear browser cache.
 
+
+### Hide Details While Watching Backdrop
+If you want item details to hide after a certain amount of time while watching a video backdrop as shown below, do the following:</br>
+![ ](/screenshots/IdleHide.png)</br>
+1. Open your `itemDetails-index-html.********************.bundle.js` file (asterisks are replaced with something specific to your instance, but this never changes after initial setup).
+2. Add the code from lines 10 to 21 located in [IdleHIde.css](https://github.com/ShiniGandhi/JellyTheme/blob/main/latest/IdleHide.css)
+3. Set `idle`to your preferred time in milliseconds (20 seconds by default)
+4. import the following to your custom CSS:
+```
+@import url("https://cdn.jsdelivr.net/gh/ShiniGandhi/JellyTheme@latest/latest/IdleHide.css");
+```
+5. Clear browser cache.
 
 ## Screenshots
 #### Main page, with resized cards (optional)
