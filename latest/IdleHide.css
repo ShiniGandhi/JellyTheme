@@ -13,11 +13,9 @@
 $(document).idle({
   onIdle: function(){
     document.body.classList.add("idle");
-    document.body.classList.add("hide-scroll");
   },
  onActive: function(){
     document.body.classList.remove("idle");
-    document.body.classList.remove("hide-scroll");
  },
   idle: 20000
 })
