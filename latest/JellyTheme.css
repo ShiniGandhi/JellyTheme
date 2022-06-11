@@ -289,6 +289,27 @@ text-shadow:1px 1px 5px #141414;
 width:60vw
 }
 
+.layout-mobile .infoWrapper {
+    padding-left: 3%;
+}
+.layout-mobile
+.detailPagePrimaryContainer.padded-left.padded-right.detailRibbon {
+    align-content: flex-end;
+    font-size: 180%;
+    justify-content: flex-start;
+    margin-top: 65vh!important;
+}
+.layout-mobile .detailPageSecondaryContainer {
+    margin: 0;
+    margin-top: -65vh !important;
+}
+.layout-mobile div#itemBackdrop {
+    width: 100vw;
+    -webkit-mask-image: linear-gradient(to top, transparent, #000000E8);
+    margin-top: 0vh;
+    transition: 300ms;
+}
+
 .layout-mobile .itemMiscInfo,.layout-mobile .itemName,.layout-mobile .mainDetailButtons,.layout-mobile .parentName {
 align-items:center;
 justify-content:flex-start;
