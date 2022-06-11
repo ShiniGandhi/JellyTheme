@@ -1,4 +1,4 @@
-# JellyTheme -- NOTE: STILL UNTESTED ON 10.8!
+# JellyTheme
 ### A heavily modified theme for Jellyfin with a very original name /s.
 
 This is a theme based on [JellyFlix](https://github.com/prayag17/JellyFlix), which is a Netflix-style theme for Jellyfin, so obviously credit to **prayag17** for providing the base for this theme. </br>Most changes can be made by just importing my CSS files, but things like moving the cast to be before the season list requires modification to some JavaScript files.
