@@ -24,6 +24,7 @@ Put these at the top of your custom CSS:
 }
 ```
 **Change `<COLOR>` to an actual color before pasting, otherwise you'll have no accent color.**
+If you want a slightly cleaner UI, with no backdrop in the main menu and a few more things, use `JellyTheme-Cleaner.css` rather than `JellyTheme.css`.
 
 If you don't use video backdrops, add this line to display a poster on mobile:
 ```
