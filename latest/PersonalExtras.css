@@ -45,6 +45,9 @@ content:"HDR"!important
 a.lnkDisplayPreferences.listItem-border.emby-button {
     display: block!important;
 }
+#displayPreferencesPage h2.sectionTitle {
+    display: none;
+}
 
 /*------------------SLIMMER LOGS------------------*/
 span.listItemIcon.material-icons.notifications {
@@ -55,6 +58,7 @@ span.listItemIcon.material-icons.notifications {
     padding: 0 !important;
 }
 
+/*------------------EXTRAS------------------*/
 .layout-mobile .dashboardSections {
     grid-auto-columns: auto;
     max-width: 82vw;
@@ -66,4 +70,39 @@ span.listItemIcon.material-icons.notifications {
 
 .layout-mobile #serverName, #versionNumber, #operatingSystem {
     margin-bottom: -1.5vh;
+}
+
+.layout-desktop .trackSelections {
+    margin-top:-13vh;
+}
+
+.btnNextChapter {
+    display: none !important;
+}
+.btnPreviousChapter {
+    display: none !important;
+}
+.actionSheetMenuItem[data-id=aspectratio] {
+    display: none !important;
+}
+.actionSheetMenuItem[data-id=playbackrate] {
+    display: none !important;
+}
+.actionSheetMenuItem[data-id=repeatmode] {
+    display: none !important;
+}
+.actionSheetMenuItem[data-id=60000000] {
+    display: none !important;
+}
+.actionSheetMenuItem[data-id=40000000] {
+    display: none !important;
+}
+.actionSheetMenuItem[data-id=20000000] {
+    display: none !important;
+}
+.actionSheetMenuItem[data-id=15000000] {
+    display: none !important;
+}
+.listItemAside.actionSheetItemAsideText {
+    display: none;
 }
