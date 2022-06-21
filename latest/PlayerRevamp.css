@@ -1,0 +1,602 @@
+.btnFastForward, .btnPreviousTrack, .btnRewind, button.btnPip.autoSize.paper-icon-button-light {
+    display: none;
+}
+
+.osdTimeText {
+    margin-left: 0 !important;
+}
+.osdTextContainer.startTimeText.osdPositionText:after {
+    content: "/" !important;
+}
+.videoOsdBottom {
+    padding-top: 2.5% !important;
+    font-size: 110%;
+    background: black;
+    border-radius: 6vh 6vh 0vh 0vh;
+}
+
+
+@media only screen and (max-width: 3841px) {
+        .osdMediaStatus {
+        position: absolute;
+        right: 42vw;
+        top: 0vh;
+        font-size: 139%;
+    }
+    .osdTextContainer.startTimeText.osdPositionText {
+        position: absolute;
+        left: 89.8vw;
+        top: 2vh;
+        direction: ltr;
+    }
+    .osdTextContainer.endTimeText.osdDurationText {
+        position: absolute;
+        left: 93vw;
+        top: 2vh;
+        direction: rtl;
+    }
+    .sliderContainer.flex-grow.mdl-slider-container {
+        position: absolute;
+        width: 60vw;
+        top: 1vh;
+        left: 30vw;
+    }
+    .osdControls .buttons.focuscontainer-x {
+        position: absolute;
+        top: 1vh;
+        font-size: 204%;
+    }
+    .flex.flex-direction-row.align-items-center {
+        font-size: 314%;
+    }
+}
+@media only screen and (max-width: 3492px) {
+        .osdMediaStatus {
+        position: absolute;
+        right: 42vw;
+        top: 0vh;
+        font-size: 139%;
+    }
+    .osdTextContainer.startTimeText.osdPositionText {
+        position: absolute;
+        left: 89.8vw;
+        top: 2vh;
+        direction: ltr;
+    }
+    .osdTextContainer.endTimeText.osdDurationText {
+        position: absolute;
+        left: 93vw;
+        top: 2vh;
+        direction: rtl;
+    }
+    .sliderContainer.flex-grow.mdl-slider-container {
+        position: absolute;
+        width: 59.5vw;
+        top: 1vh;
+        left: 30.5vw;
+    }
+    .osdControls .buttons.focuscontainer-x {
+        position: absolute;
+        top: 1vh;
+        font-size: 190%;
+    }
+    .flex.flex-direction-row.align-items-center {
+        font-size: 284%;
+    }
+}
+@media only screen and (max-width: 3073px) {
+        .osdMediaStatus {
+        position: absolute;
+        right: 42vw;
+        top: 0vh;
+        font-size: 139%;
+    }
+    .osdTextContainer.startTimeText.osdPositionText {
+        position: absolute;
+        left: 89.8vw;
+        top: 2vh;
+        direction: ltr;
+    }
+    .osdTextContainer.endTimeText.osdDurationText {
+        position: absolute;
+        left: 93vw;
+        top: 2vh;
+        direction: rtl;
+    }
+    .sliderContainer.flex-grow.mdl-slider-container {
+        position: absolute;
+        width: 59.5vw;
+        top: 1vh;
+        left: 30.5vw;
+    }
+    .osdControls .buttons.focuscontainer-x {
+        position: absolute;
+        top: 1vh;
+        font-size: 166%;
+    }
+    .flex.flex-direction-row.align-items-center {
+        font-size: 251%;
+    }
+}
+@media only screen and (max-width: 2561px) {
+        .osdMediaStatus {
+        position: absolute;
+        right: 42vw;
+        top: 0vh;
+        font-size: 139%;
+    }
+    .osdTextContainer.startTimeText.osdPositionText {
+        position: absolute;
+        left: 89.8vw;
+        top: 2vh;
+        direction: ltr;
+    }
+    .osdTextContainer.endTimeText.osdDurationText {
+        position: absolute;
+        left: 93vw;
+        top: 2vh;
+        direction: rtl;
+    }
+    .sliderContainer.flex-grow.mdl-slider-container {
+        position: absolute;
+        width: 59vw;
+        top: 1vh;
+        left: 31vw;
+    }
+    .osdControls .buttons.focuscontainer-x {
+        position: absolute;
+        top: 1vh;
+        font-size: 139%;
+    }
+    .flex.flex-direction-row.align-items-center {
+        font-size: 203%;
+    }
+}
+@media only screen and (max-width: 2328px) {
+        .osdMediaStatus {
+        position: absolute;
+        right: 42vw;
+        top: 0vh;
+        font-size: 139%;
+    }
+    .osdTextContainer.startTimeText.osdPositionText {
+        position: absolute;
+        left: 89.8vw;
+        top: 2vh;
+        direction: ltr;
+    }
+    .osdTextContainer.endTimeText.osdDurationText {
+        position: absolute;
+        left: 93vw;
+        top: 2vh;
+        direction: rtl;
+    }
+    .sliderContainer.flex-grow.mdl-slider-container {
+        position: absolute;
+        width: 58.5vw;
+        top: 1vh;
+        left: 31.5vw;
+    }
+    .osdControls .buttons.focuscontainer-x {
+        position: absolute;
+        top: 1vh;
+        font-size: 129%;
+    }
+    .flex.flex-direction-row.align-items-center {
+        font-size: 199%;
+    }
+}
+@media only screen and (max-width: 2195px) {
+        .osdMediaStatus {
+        position: absolute;
+        right: 42vw;
+        top: 0vh;
+        font-size: 139%;
+    }
+    .osdTextContainer.startTimeText.osdPositionText {
+        position: absolute;
+        left: 89.8vw;
+        top: 2vh;
+        direction: ltr;
+    }
+    .osdTextContainer.endTimeText.osdDurationText {
+        position: absolute;
+        left: 93vw;
+        top: 2vh;
+        direction: rtl;
+    }
+    .sliderContainer.flex-grow.mdl-slider-container {
+        position: absolute;
+        width: 58.5vw;
+        top: 1vh;
+        left: 31.5vw;
+    }
+    .osdControls .buttons.focuscontainer-x {
+        position: absolute;
+        top: 1vh;
+        font-size: 124%;
+    }
+    .flex.flex-direction-row.align-items-center {
+        font-size: 184%;
+    }
+}
+@media only screen and (max-width: 2049px) {
+        .osdMediaStatus {
+        position: absolute;
+        right: 42vw;
+        top: 0vh;
+        font-size: 139%;
+    }
+    .osdTextContainer.startTimeText.osdPositionText {
+        position: absolute;
+        left: 89.8vw;
+        top: 2vh;
+        direction: ltr;
+    }
+    .osdTextContainer.endTimeText.osdDurationText {
+        position: absolute;
+        left: 93vw;
+        top: 2vh;
+        direction: rtl;
+    }
+    .sliderContainer.flex-grow.mdl-slider-container {
+        position: absolute;
+        width: 57vw;
+        top: 1vh;
+        left: 33.3vw;
+    }
+    .osdControls .buttons.focuscontainer-x {
+        position: absolute;
+        top: 0.8vh;
+        font-size: 122%;
+    }
+    .flex.flex-direction-row.align-items-center {
+        font-size: 173%;
+    }
+}
+    @media only screen and (max-width: 1921px) {
+        .osdMediaStatus {
+        position: absolute;
+        right: 42vw;
+        top: 0vh;
+        font-size: 139%;
+    }
+    .osdTextContainer.startTimeText.osdPositionText {
+        position: absolute;
+        left: 89.8vw;
+        top: 2vh;
+        direction: ltr;
+    }
+    .osdTextContainer.endTimeText.osdDurationText {
+        position: absolute;
+        left: 93vw;
+        top: 2vh;
+        direction: rtl;
+    }
+    .sliderContainer.flex-grow.mdl-slider-container {
+        position: absolute;
+        width: 57.5vw;
+        top: 1vh;
+        left: 32vw;
+    }
+    .osdControls .buttons.focuscontainer-x {
+        position: absolute;
+        top: 0.5vh;
+        font-size: 119%;
+    }
+    .flex.flex-direction-row.align-items-center {
+        font-size: 150%;
+    }
+}
+@media only screen and (max-width: 1921px) {
+        .osdMediaStatus {
+        position: absolute;
+        right: 42vw;
+        top: 0vh;
+        font-size: 139%;
+    }
+    .osdTextContainer.startTimeText.osdPositionText {
+        position: absolute;
+        left: 89.8vw;
+        top: 2vh;
+        direction: ltr;
+    }
+    .osdTextContainer.endTimeText.osdDurationText {
+        position: absolute;
+        left: 93vw;
+        top: 2vh;
+        direction: rtl;
+    }
+    .sliderContainer.flex-grow.mdl-slider-container {
+        position: absolute;
+        width: 54.5vw;
+        top: 1vh;
+        left: 35vw;
+    }
+    .osdControls .buttons.focuscontainer-x {
+        position: absolute;
+        top: 0.5vh;
+        font-size: 119%;
+    }
+    .flex.flex-direction-row.align-items-center {
+        font-size: 150%;
+    }
+}
+@media only screen and (max-width: 1746px) {
+        .osdMediaStatus {
+        position: absolute;
+        right: 42vw;
+        top: 0vh;
+        font-size: 139%;
+    }
+    .osdTextContainer.startTimeText.osdPositionText {
+        position: absolute;
+        left: 89.8vw;
+        top: 2vh;
+        direction: ltr;
+    }
+    .osdTextContainer.endTimeText.osdDurationText {
+        position: absolute;
+        left: 93vw;
+        top: 2vh;
+        direction: rtl;
+    }
+    .sliderContainer.flex-grow.mdl-slider-container {
+        position: absolute;
+        width: 51vw;
+        top: 1vh;
+        left: 39vw;
+    }
+    .osdControls .buttons.focuscontainer-x {
+        position: absolute;
+        top: 0.5vh;
+        font-size: 119%;
+    }
+    .flex.flex-direction-row.align-items-center {
+        font-size: 146%;
+    }
+}
+@media only screen and (max-width: 1537px) {
+        .osdMediaStatus {
+        position: absolute;
+        right: 42vw;
+        top: 0vh;
+        font-size: 139%;
+    }
+    .osdTextContainer.startTimeText.osdPositionText {
+        position: absolute;
+        left: 89.8vw;
+        top: 2vh;
+        direction: ltr;
+    }
+    .osdTextContainer.endTimeText.osdDurationText {
+        position: absolute;
+        left: 93vw;
+        top: 2vh;
+        direction: rtl;
+    }
+    .sliderContainer.flex-grow.mdl-slider-container {
+        position: absolute;
+        width: 59vw;
+        top: 1vh;
+        left: 31vw;
+    }
+    .osdControls .buttons.focuscontainer-x {
+        position: absolute;
+        top: 0.5vh;
+        font-size: 85%;
+    }
+    .flex.flex-direction-row.align-items-center {
+        font-size: 126%;
+    }
+}
+@media only screen and (max-width: 1281px) {
+        .osdMediaStatus {
+        position: absolute;
+        right: 42vw;
+        top: 0vh;
+        font-size: 139%;
+    }
+    .osdTextContainer.startTimeText.osdPositionText {
+        position: absolute;
+        left: 89.8vw;
+        top: 2vh;
+        direction: ltr;
+    }
+    .osdTextContainer.endTimeText.osdDurationText {
+        position: absolute;
+        left: 93vw;
+        top: 2vh;
+        direction: rtl;
+    }
+    .sliderContainer.flex-grow.mdl-slider-container {
+        position: absolute;
+        width: 53vw;
+        top: 1vh;
+        left: 36.5vw;
+    }
+    .osdControls .buttons.focuscontainer-x {
+        position: absolute;
+        top: 0.5vh;
+        font-size: 81%;
+    }
+    .flex.flex-direction-row.align-items-center {
+        font-size: 105%;
+    }
+}
+@media only screen and (max-width: 1098px) {
+        .osdMediaStatus {
+        position: absolute;
+        right: 42vw;
+        top: 0vh;
+        font-size: 139%;
+    }
+    .osdTextContainer.startTimeText.osdPositionText {
+        position: absolute;
+        left: 89.8vw;
+        top: 5vh;
+        direction: ltr;
+    }
+    .osdTextContainer.endTimeText.osdDurationText {
+        position: absolute;
+        left: 93vw;
+        top: 5vh;
+        direction: rtl;
+    }
+    .sliderContainer.flex-grow.mdl-slider-container {
+        position: absolute;
+        width: 51vw;
+        top: 4vh;
+        left: 39.5vw;
+    }
+    .osdControls .buttons.focuscontainer-x {
+        position: absolute;
+        top: 3.5vh;
+        font-size: 76%;
+    }
+    .flex.flex-direction-row.align-items-center {
+        font-size: 101%;
+    }
+}
+@media only screen and (max-width: 960px) {
+        .osdMediaStatus {
+        position: absolute;
+        right: 42vw;
+        top: 0vh;
+        font-size: 139%;
+    }
+    .osdTextContainer.startTimeText.osdPositionText {
+        position: absolute;
+        left: 89.8vw;
+        top: 5vh;
+        direction: ltr;
+    }
+    .osdTextContainer.endTimeText.osdDurationText {
+        position: absolute;
+        left: 93vw;
+        top: 5vh;
+        direction: rtl;
+    }
+    .sliderContainer.flex-grow.mdl-slider-container {
+        position: absolute;
+        width: 51vw;
+        top: 4vh;
+        left: 39.5vw;
+    }
+    .osdControls .buttons.focuscontainer-x {
+        position: absolute;
+        top: 3.5vh;
+        font-size: 67%;
+    }
+    .flex.flex-direction-row.align-items-center {
+        font-size: 86%;
+    }
+}
+@media only screen and (max-width: 769px) {
+        .osdMediaStatus {
+        position: absolute;
+        right: 42vw;
+        top: 0vh;
+        font-size: 139%;
+    }
+    .osdTextContainer.startTimeText.osdPositionText {
+        position: absolute;
+        left: 89.8vw;
+        top: 5vh;
+        direction: ltr;
+    }
+    .osdTextContainer.endTimeText.osdDurationText {
+        position: absolute;
+        left: 93vw;
+        top: 5vh;
+        direction: rtl;
+    }
+    .sliderContainer.flex-grow.mdl-slider-container {
+        position: absolute;
+        width: 51vw;
+        top: 4vh;
+        left: 39.5vw;
+    }
+    .osdControls .buttons.focuscontainer-x {
+        position: absolute;
+        top: 3.5vh;
+        font-size: 67%;
+    }
+    .flex.flex-direction-row.align-items-center {
+        font-size: 86%;
+    }
+}
+
+@media only screen and (max-width: 721px) {
+        .osdMediaStatus {
+        position: absolute;
+        right: 42vw;
+        top: 0vh;
+        font-size: 139%;
+    }
+    .osdTextContainer.startTimeText.osdPositionText {
+        position: absolute;
+        left: 89.8vw;
+        top: 5vh;
+        direction: ltr;
+    }
+    .osdTextContainer.endTimeText.osdDurationText {
+        position: absolute;
+        left: 93vw;
+        top: 5vh;
+        direction: rtl;
+    }
+    .sliderContainer.flex-grow.mdl-slider-container {
+        position: absolute;
+        width: 51vw;
+        top: 4vh;
+        left: 39.5vw;
+    }
+    .osdControls .buttons.focuscontainer-x {
+        position: absolute;
+        top: 3.5vh;
+        font-size: 67%;
+    }
+    .flex.flex-direction-row.align-items-center {
+        font-size: 86%;
+    }
+}
+.layout-mobile .videoOsdBottom {
+    padding-top: 4.5% !important;
+    font-size: 110%;
+    background: black;
+    border-radius: 6vh 6vh 0vh 0vh;
+}
+
+.layout-mobile .osdMediaStatus {
+    position: absolute;
+    right: 42vw;
+    top: 0vh;
+    font-size: 139%;
+}
+.layout-mobile .osdTextContainer.startTimeText.osdPositionText {
+    position: absolute;
+    left: 85vw;
+    top: 10vh;
+    direction: ltr;
+}
+.layout-mobile .osdTextContainer.endTimeText.osdDurationText {
+    position: absolute;
+    left: 90vw;
+    top: 10vh;
+    direction: rtl;
+}
+.layout-mobile .sliderContainer.flex-grow.mdl-slider-container {
+    position: absolute;
+    width: 95vw;
+    top: 0vh;
+    left: 3vw;
+}
+.layout-mobile .osdControls .buttons.focuscontainer-x {
+    position: absolute;
+    top: 6.5vh;
+    font-size: 87%;
+}
+.layout-mobile .flex.flex-direction-row.align-items-center {
+    font-size: 113%;
+}
