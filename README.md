@@ -67,6 +67,13 @@ If your server's metadata is in Hebrew, Arabic (or any other language that is wr
 @import url("https://cdn.jsdelivr.net/gh/ShiniGandhi/JellyTheme@latest/latest/RTL-Fix.css");
 ```
 
+#### Revamped video player
+
+If you want the revamped video player, optimized for most screen resolutions and scales, (screenshot below), import this:</br>
+```
+@import url("https://cdn.jsdelivr.net/gh/ShiniGandhi/JellyTheme@latest/latest/PlayerRevamp.css");
+```
+
 #### Slim Active Devices
 
 If you want slimmer Active Devices entries like here (At the moment this ~~only looks good in 1080p~~ looks great in 4K and 1440p, but not perfect in 1080p (how the turntables huh), still working on scaling it), Import this: </br>
@@ -163,5 +170,7 @@ If you want item details to hide after a certain amount of time while watching a
 ![](/screenshots/Season.png)
 #### TV show - episode entry
 ![](/screenshots/Episode.png)
+#### Revamped video player (optional)
+![](/screenshots/PlayerRevamp.png)
 #### Cleaner user settings (optional)
 ![](/screenshots/User-Settings.png)
