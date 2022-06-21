@@ -2573,6 +2573,15 @@ width:18vw;
     outline: 3px solid var(--accent) !important;
 }
 
+.layout-mobile .skipIntro {
+    top: 55vh !important;
+    font-size: 1.8vw !important;
+}
+
+.hide-scroll h1.actionSheetTitle {
+    display: none;
+}
+
 
 html:not(.layout-mobile) .detailLogo.hide {
     margin-bottom: -26vh;
