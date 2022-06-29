@@ -308,6 +308,7 @@ width:60vw
     -webkit-mask-image: linear-gradient(to top, transparent, #000000E8);
     margin-top: 0vh;
     transition: 300ms;
+    background-position-x: 75%;
 }
 
 .layout-mobile .itemMiscInfo,.layout-mobile .itemName,.layout-mobile .mainDetailButtons,.layout-mobile .parentName {
@@ -318,6 +319,10 @@ text-align:left
 
 .layout-mobile .nameContainer {
 font-size:6.5vw
+}
+
+.sessionNowPlayingContent {
+    bottom: -50px !important;
 }
 
 #itemDetailPage .detailVerticalSection:last-child {
