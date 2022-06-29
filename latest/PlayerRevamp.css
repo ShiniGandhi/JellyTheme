@@ -600,3 +600,8 @@
 .layout-mobile .flex.flex-direction-row.align-items-center {
     font-size: 113%;
 }
+
+.subtitleSync {
+    top: 62vh;
+    left: 0vw;
+}
