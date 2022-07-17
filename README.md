@@ -73,6 +73,16 @@ If you want the revamped video player, optimized for most screen resolutions and
 ```
 @import url("https://cdn.jsdelivr.net/gh/ShiniGandhi/JellyTheme@latest/latest/PlayerRevamp.css");
 ```
+![](/screenshots/PlayerRevamp.png)
+
+#### Trimmed Quality Section
+
+If you want to have less bitrate options (screenshot below), import this:</br>
+```
+@import url("https://cdn.jsdelivr.net/gh/ShiniGandhi/JellyTheme@latest/latest/TrimmedQualitySection.css");
+```
+![](/screenshots/TrimmedQualitySection.png)
+</br><b>NOTE: This removes every bitrate over 8Mbps and changes the names of everything as shown in the screenshot. Use this only if you're sure that's what you want.</b>
 
 #### Slim Active Devices
 
@@ -170,7 +180,5 @@ If you want item details to hide after a certain amount of time while watching a
 ![](/screenshots/Season.png)
 #### TV show - episode entry
 ![](/screenshots/Episode.png)
-#### Revamped video player (optional)
-![](/screenshots/PlayerRevamp.png)
 #### Cleaner user settings (optional)
 ![](/screenshots/User-Settings.png)
