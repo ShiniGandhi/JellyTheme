@@ -43,6 +43,3 @@
 .emby-button[data-id="0"]:after {
     content: "Automatic";
 }
-.emby-button[data-id="quality"] .actionSheetItemText, .emby-button[data-id="suboffset"] .actionSheetItemText, .emby-button[data-id="stats"] .actionSheetItemText, .dialogContainer .actionSheetContent {
-    font-size: 22px;
-}
