@@ -889,6 +889,18 @@ margin:0!important
 box-shadow:0 0 #000!important
 }
 
+div:not(.sectionTitleContainer-cards)>.sectionTitle-cards {
+    padding-top: 1em !important;
+}
+
+div:not(.sectionTitleContainer-cards)>.sectionTitle-cards {
+    font-size: revert !important;
+}
+
+.mainDetailButtons .raised:not(:hover) {
+    background: #0000 !important;
+}
+
 .emby-input,.emby-textarea,.emby-select {
 background:#101010!important;
 border:2.5px solid #101010!important;
