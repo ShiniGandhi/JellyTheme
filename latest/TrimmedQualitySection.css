@@ -1,0 +1,48 @@
+
+.actionSheetMenuItem  .material-icons.check:before {
+    color: var(--accent) !important;
+    font-weight: 900;
+}
+.emby-button[data-id="120000000"], .emby-button[data-id="80000000"],.emby-button[data-id="60000000"], .emby-button[data-id="40000000"], .emby-button[data-id="20000000"],
+.emby-button[data-id="15000000"], .emby-button[data-id="10000000"] {
+    display: none !important;
+}
+.emby-button[data-id="8000000"], .emby-button[data-id="6000000"], .emby-button[data-id="4000000"],
+.emby-button[data-id="3000000"], .emby-button[data-id="1500000"], .emby-button[data-id="720000"],
+.emby-button[data-id="420000"], .emby-button[data-id="0"] {
+    color: transparent;
+}
+.emby-button[data-id="8000000"]:after, .emby-button[data-id="6000000"]:after, .emby-button[data-id="4000000"]:after,
+.emby-button[data-id="3000000"]:after, .emby-button[data-id="1500000"]:after, .emby-button[data-id="720000"]:after,
+.emby-button[data-id="420000"]:after, .emby-button[data-id="0"]:after {
+    color: white !important;
+    font-weight: 900;
+    margin-right: 100%;
+}
+.emby-button[data-id="8000000"]:after {
+    content: "Maximum";
+}
+.emby-button[data-id="6000000"]:after {
+    content: "1080p";
+}
+.emby-button[data-id="4000000"]:after {
+    content: "720p";
+}
+.emby-button[data-id="3000000"]:after {
+    content: "480p";
+}
+.emby-button[data-id="1500000"]:after {
+    content: "360p";
+}
+.emby-button[data-id="720000"]:after {
+    content: "240p";
+}
+.emby-button[data-id="420000"]:after {
+    content: "Low";
+}
+.emby-button[data-id="0"]:after {
+    content: "Automatic";
+}
+.emby-button[data-id="quality"] .actionSheetItemText, .emby-button[data-id="suboffset"] .actionSheetItemText, .emby-button[data-id="stats"] .actionSheetItemText, .dialogContainer .actionSheetContent {
+    font-size: 22px;
+}
