@@ -82,7 +82,7 @@ If you want to have less bitrate options (screenshot below), import this:</br>
 @import url("https://cdn.jsdelivr.net/gh/ShiniGandhi/JellyTheme@latest/latest/TrimmedQualitySection.css");
 ```
 ![](/screenshots/TrimmedQualitySection.png)
-</br><b>NOTE: This removes every bitrate over 8Mbps and changes the names of everything as shown in the screenshot. Use this only if you're sure that's what you want.</b>
+</br><b>NOTE: This removes every bitrate over 8Mbps and changes the names of everything as shown in the screenshot. Use this only if you're sure that's what you want.</b></br>Also, the pop-up menu itself is positioned a little wonky atm, I'm looking into it.
 
 #### Slim Active Devices
 
