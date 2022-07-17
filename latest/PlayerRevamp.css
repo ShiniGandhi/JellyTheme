@@ -605,3 +605,8 @@
     top: 62vh;
     left: 0vw;
 }
+
+.emby-button[data-id="quality"] .actionSheetItemText, .emby-button[data-id="suboffset"] .actionSheetItemText, .emby-button[data-id="stats"] .actionSheetItemText, .dialogContainer .actionSheetContent {
+    font-size: 22px;
+}
+
