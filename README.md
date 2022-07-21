@@ -82,7 +82,7 @@ If you want to have a slightly less overwhelming quality menu (screenshot below)
 @import url("https://cdn.jsdelivr.net/gh/ShiniGandhi/JellyTheme@latest/latest/TrimmedQualitySection.css");
 ```
 ![](/screenshots/TrimmedQualitySection.png)
-</br><b>NOTE: This removes bitrates over 20Mbps (as well as 450kbps) and changes the names of everything as shown in the screenshot.</br>Also, 720kbps was renamed to 0.5Mbps for simplicity's sake)</br>. Use this only if you're sure that's what you want.</b></br>Also, the pop-up menu itself is positioned a little wonky atm, I'm looking into it.
+</br><b>NOTE: This removes bitrates over 40Mbps (as well as 450kbps) and changes the names of everything as shown in the screenshot.</br>Also, 720kbps was renamed to 0.5Mbps for simplicity's sake)</br>. Use this only if you're sure that's what you want.</b></br>Also, the pop-up menu itself is positioned a little wonky atm, I'm looking into it.
 
 #### Slim Active Devices
 
