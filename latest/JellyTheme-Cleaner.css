@@ -1137,7 +1137,7 @@ width:92vw!important;
 }
 
 .vertical-wrap {
-width:100%!important
+width:93%!important
 }
 
 .emby-scroller {
@@ -1519,6 +1519,10 @@ transform:none!important
 body:not(.withSectionTabs) > .skinHeader {
 background:linear-gradient(to bottom,rgba(20,20,20),transparent)!important;
 transform:none!important
+}
+
+:not(.layout-mobile) body {
+    background: black !important;
 }
 
 .upNextDialog {
@@ -2436,12 +2440,20 @@ display:none!important;
   width:100%;
 }
 
+:not(.layout-mobile) body:not(.idle):not(.hide-scroll) .videoPlayerContainer {
+    max-height: 75vh;
+    max-width: 75vw;
+    left: 28vw;
+}
+
 :not(.layout-mobile) body:not(.idle) .htmlvideoplayer {
-    mask-image: linear-gradient(to right, transparent 100%, black),
-    linear-gradient(to top, transparent, black 100%);
-    -webkit-mask-image: linear-gradient(to right, transparent 100%, black),
-    linear-gradient(to top, transparent , black 100%);
+    mask-image: url("https://phoenixtv.io/web/trailer-gradient.png");
+    -webkit-mask-image: url("https://phoenixtv.io/web/trailer-gradient.png");
     transition: 2500ms;
+    -webkit-mask-size: 156vh;
+    mask-size: 156vh;
+    -webkit-mask-position: 0% 100%;
+    mask-position: 0% 100%;
 }
 
 .hide-scroll .htmlvideoplayer {
