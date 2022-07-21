@@ -2447,8 +2447,8 @@ display:none!important;
 }
 
 :not(.layout-mobile) body:not(.idle) .htmlvideoplayer {
-    mask-image: url("https://phoenixtv.io/web/trailer-gradient.png");
-    -webkit-mask-image: url("https://phoenixtv.io/web/trailer-gradient.png");
+    mask-image: url("https://cdn.jsdelivr.net/gh/ShiniGandhi/JellyTheme@main/screenshots/trailer-gradient.png");
+    -webkit-mask-image: url("https://cdn.jsdelivr.net/gh/ShiniGandhi/JellyTheme@main/screenshots/trailer-gradient.png");
     transition: 2500ms;
     -webkit-mask-size: 156vh;
     mask-size: 156vh;
