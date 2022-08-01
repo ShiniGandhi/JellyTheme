@@ -2445,11 +2445,14 @@ display:none!important;
 }
 
 :not(.layout-mobile) body:not(.idle):not(.hide-scroll) .videoPlayerContainer {
-    max-height: 80vh;
-    max-width: 75vw;
-    left: 28vw;
+    margin-left: -75vw !important;
+    margin-right: -18vw;
+    max-height: 81vh;
+    max-width: 78vw;
+    left: 25vw;
     position: sticky !important;
-    margin-left: -48vw;
+    height: 81vh;
+    margin-top: 10vh;
 }
 
 :not(.layout-mobile) body:not(.idle) .htmlvideoplayer {
