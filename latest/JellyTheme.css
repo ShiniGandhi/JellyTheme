@@ -178,6 +178,10 @@ button.cardImageContainer.cardContent.itemAction.lazy.blurhashed.lazy-image-fade
 border-radius:var(--rounding) var(--rounding) 0 0!important
 }
 
+.backdropImageFadeIn {
+    animation-delay: 3s;
+}
+
 .cardBox:not(.visualCardBox) .cardPadder,.cardContent-shadow {
 box-shadow:none
 }
