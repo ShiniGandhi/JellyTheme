@@ -2417,9 +2417,11 @@ display:none!important;
 }
 
 :not(.layout-mobile) body:not(.idle):not(.hide-scroll) .videoPlayerContainer {
-    max-height: 75vh;
+    max-height: 80vh;
     max-width: 75vw;
     left: 28vw;
+    position: sticky !important;
+    margin-left: -48vw;
 }
 
 :not(.layout-mobile) body:not(.idle) .htmlvideoplayer {
