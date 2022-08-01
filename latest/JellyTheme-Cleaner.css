@@ -187,6 +187,10 @@ button.cardImageContainer.cardContent.itemAction.lazy.blurhashed.lazy-image-fade
 border-radius:var(--rounding) var(--rounding) 0 0!important
 }
 
+.backdropImageFadeIn {
+    animation-delay: 3s;
+}
+
 .cardBox:not(.visualCardBox) .cardPadder,.cardContent-shadow {
 box-shadow:none
 }
@@ -2441,9 +2445,11 @@ display:none!important;
 }
 
 :not(.layout-mobile) body:not(.idle):not(.hide-scroll) .videoPlayerContainer {
-    max-height: 75vh;
+    max-height: 80vh;
     max-width: 75vw;
     left: 28vw;
+    position: sticky !important;
+    margin-left: -48vw;
 }
 
 :not(.layout-mobile) body:not(.idle) .htmlvideoplayer {
