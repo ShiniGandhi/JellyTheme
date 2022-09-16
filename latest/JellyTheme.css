@@ -606,13 +606,6 @@ content:"";
 display:none
 }
 
-.layout-mobile
-.detailPagePrimaryContainer.padded-left.padded-right.detailRibbon {
-align-content:flex-end;
-font-size:180%;
-justify-content:flex-start;
-}
-
 .cardText > .textActionButton {
 height:100%!important;
 overflow:hidden;
@@ -922,26 +915,6 @@ z-index:0
 z-index:-1
 }
 
-.layout-mobile .emby-scroller {
-overflow:auto!important;
-padding:0!important
-}
-
-.layout-mobile .innerCardFooter {
-margin:0 3%;
-width:70%
-}
-
-.layout-mobile .cardOverlayButton {
-border:2px solid var(--accent);
-color:#fff!important;
-margin:0 2% 2% 0
-}
-
-.layout-mobile .cardText {
-opacity:1
-}
-
 .cardBox {
 background:transparent!important;
 box-shadow:none;
@@ -1039,20 +1012,6 @@ width:calc(10% - 10px)
 
 .card.show-animation:focus > .cardBox {
 transform:scale(1)!important
-}
-
-.layout-tv .cardBox {
-height:100%
-}
-
-.layout-mobile .card:hover {
-background:none!important;
-box-shadow:none;
-transform:none!important
-}
-
-.layout-mobile .card:hover .cardScalable {
-border-radius:var(--rounding)!important
 }
 
 .card:first-child {
@@ -1238,58 +1197,6 @@ padding-right:0!important;
 text-shadow:none
 }
 
-.layout-mobile #itemDetailPage .sectionTitle {
-padding-left:5%
-}
-
-.layout-mobile .detailPagePrimaryContent {
-height:-webkit-fit-content!important;
-height:-moz-fit-content!important;
-height:fit-content!important;
-min-height:-webkit-fit-content!important;
-min-height:-moz-fit-content!important;
-min-height:fit-content!important;
-padding:0 5%!important;
-width:calc(100vw - 10%)!important
-}
-
-.layout-tv #itemDetailPage:not(.noBackdrop) .detailPagePrimaryContainer,.layout-desktop #itemDetailPage:not(.noBackdrop) .detailPagePrimaryContainer {
-background:transparent;
-font-size:20px;
-font-size:135%;
-height:20vh;
-margin-top:10vh;
-max-width:95%;
-padding:0!important;
-position:relative;
-top:0;
-width:-webkit-fit-content!important;
-width:-moz-fit-content!important;
-width:fit-content!important
-}
-
-.layout-tv #itemDetailPage:not(.noBackdrop) .detailPagePrimaryContainer {
-height:-webkit-fit-content;
-height:-moz-fit-content;
-height:fit-content;
-margin-top:-28vh;
-height: 80vh;
-width:95vw!important;
-}
-
-.layout-tv h3.itemName.infoText.subtitle {
-    font-size: 68px;
-    margin-top: 0pc !important;
-}
-
-.layout-tv .itemName {
-    margin: 1em 0!important;
-}
-
-.layout-tv .itemMiscInfo.itemMiscInfo-primary {
-    margin-top: -7vh;
-}
-
 .detailImageContainer .card {
 display:none
 }
@@ -1352,10 +1259,6 @@ width:-webkit-fill-available
 
 .cardDefaultText {
 opacity:1!important
-}
-
-.layout-mobile .card[data-type="Actor"] .cardText-first {
-color:#fff!important
 }
 
 .card[data-type="Actor"] .cardScalable {
@@ -1627,10 +1530,6 @@ height:31vh;
 width:100%
 }
 
-.layout-tv #itemDetailPage .itemName.infoText.parentNameLast {
-display:block !important;
-}
-
 .listItem-withContentWrapper:hover
 .listItemImageButton.itemAction.paper-icon-button-light {
 opacity:100%
@@ -1712,12 +1611,6 @@ position:absolute;
 right:-.5px
 }
 
-.layout-mobile #itemDetailPage .vertical-list {
-grid-template-columns:100%;
-margin:0 auto!important;
-width:90vw
-}
-
 .listItemIndicators {
 right:0;
 top:0
@@ -1742,18 +1635,6 @@ height:-moz-fit-content;
 height:fit-content
 }
 
-.layout-mobile .listItem-bottomoverview {
-padding:0 10px
-}
-
-.layout-mobile .itemsContainer {
-padding:0 10px
-}
-
-.layout-mobile .itemsContainer > :last-child {
-padding-right:10px!important
-}
-
 .listItemBody.itemAction {
 padding:0 5px
 }
@@ -1774,10 +1655,6 @@ background:#141414
 color:var(--accent);
 opacity:0;
 transition:all .2s
-}
-
-.layout-mobile .listItemImageButton.itemAction.paper-icon-button-light {
-opacity:100%!important
 }
 
 .section0 button.itemAction.textActionButton {
@@ -1949,10 +1826,6 @@ flex-direction:column
 min-height:60vh!important
 }
 
-.layout-mobile .detailRibbon {
-margin-top:0!important
-}
-
 .hide + .detailPageWrapperContainer .detailPagePrimaryContent {
 min-height:65vh!important
 }
@@ -1971,12 +1844,6 @@ width:-moz-fit-content!important;
 width:fit-content!important
 }
 
-.layout-desktop #itemDetailPage:not(.noBackdrop) .detailPagePrimaryContainer,.layout-tv #itemDetailPage:not(.noBackdrop) .detailPagePrimaryContainer {
-height:10vh;
-margin:0;
-padding:0
-}
-
 :not(.hide) + .detailPageWrapperContainer .parentName,:not(.hide) + .detailPageWrapperContainer .parentNameLast,:not(.hide) + .detailPageWrapperContainer .parentName > *,:not(.hide) + .detailPageWrapperContainer .parentNameLast > * {
 background:transparent;
 display:block;
@@ -1986,34 +1853,6 @@ left:5vw;
 position:fixed;
 top:10vh;
 width:35vw
-}
-
-.layout-desktop :not(.hide) + .detailPageWrapperContainer .parentName,.layout-desktop :not(.hide) + .detailPageWrapperContainer .parentNameLast,.layout-desktop :not(.hide) + .detailPageWrapperContainer .parentName > *,.layout-desktop :not(.hide) + .detailPageWrapperContainer .parentNameLast > * {
-background:transparent;
-display:block;
-font-size:0;
-height:20vh;
-left:5vw;
-position:fixed;
-top:10vh;
-width:35vw
-}
-
-.layout-tv :not(.hide) + .detailPageWrapperContainer .parentName,.layout-tv  :not(.hide) + .detailPageWrapperContainer .parentNameLast,.layout-tv  :not(.hide) + .detailPageWrapperContainer .parentName > *,.layout-tv  :not(.hide) + .detailPageWrapperContainer .parentNameLast > * {
-  background: transparent;
-  height: 20vh;
-  top: 10vh;
-  position: static;
-  width: 84vw;
-  margin-top: 4vh !important;
-  margin-bottom: -6vh !important;
-  font-size: 68px;
-}
-
-
-
-.layout-mobile #itemDetailPage .parentName,.layout-mobile #itemDetailPage .parentNameLast {
-display:block
 }
 
 .hide + .detailPageWrapperContainer .parentName,.hide + .detailPageWrapperContainer .parentNameLast {
@@ -2032,17 +1871,6 @@ font-size:1em
 font-size:1em
 }
 
-.layout-mobile #itemDetailPage .itemName.infoText.parentNameLast {
-display:block;
-font-size:10.5vw;
-height:-webkit-fit-content;
-height:-moz-fit-content;
-height:fit-content;
-position:static;
-width:calc(100% - 10vw)
-}
-
-
 .withSectionTabs .backdropImage {
 filter:blur(18px) saturate(120%) contrast(120%) brightness(60%)
 }
@@ -2060,40 +1888,6 @@ div#itemDetailPage {
 background:#00000000
 }
 
-.layout-desktop div#itemDetailPage {
-    margin-top: 2vh !important;
-}
-
-.layout-desktop .collectionItems {
-margin-top:-30%
-}
-
-.layout-desktop .childrenItemsContainer.itemsContainer.padded-right.vertical-list {
-margin-top:-25em!important
-}
-
-.layout-desktop, .nextUpSection {
-background-color:#000000de;
-border-radius:34px;
-margin-left:80%;
-margin-right:-30vw;
-margin-top:-27vh;
-padding-bottom:1vh;
-padding-left:2vw;
-padding-right:30vw
-}
-
-.layout-tv .nextUpSection {
-background-color:#000000de;
-border-radius:34px;
-margin-left:80%;
-margin-right:-30vw;
-margin-top:-27vh;
-padding-bottom:1vh;
-padding-left:2vw;
-padding-right:30vw
-}
-
 .layout-desktop div#childrenCollapsible {
 width:100%
 }
@@ -2101,21 +1895,6 @@ width:100%
 #itemDetailPage .detailLogo {
 margin-top:3vh!important;
 z-index:1!important
-}
-
-.layout-desktop .itemDetailsGroup {
-font-size:large!important;
-max-width: 23vw;
-margin-bottom: 6%;
-}
-
-.layout-desktop .moreFromSeasonSection {
-margin-top:3vh!important
-}
-
-.layout-desktop .trackSelections {
-font-size:small!important;
-max-width:27em!important
 }
 
 .itemTags {
@@ -2173,53 +1952,12 @@ display:none
 display:none
 }
 
-
-.layout-mobile .headerCastButton {
-display:block!important
-}
-
-
 .headerTabs.sectionTabs {
 font-size:100%!important
 }
 
-.layout-tv .emby-button.detailFloatingButton {
-    margin-right: 0 !important;
-    font-size: 1em !important
-}
-
-.layout-tv .detailSection {
-background-color:#000000de;
-border-radius:105px;
-margin-left:-30vw;
-margin-top:-50vh;
-padding:10vh 2vw 2vh 30vw;
-width:44vw!important;
-}
-
-.layout-desktop .detailSection {
-background-color:#000000de;
-border-radius:105px;
-margin-left:-30vw;
-margin-top:-10vh;
-padding:10vh 2vw 2vh 30vw;
-width:44vw!important
-}
-
 .progressring-spiner {
 border-color:#b1b1b1
-}
-
-.layout-mobile .cardOverlayButton {
-display:none
-}
-
-.layout-mobile .innerCardFooter {
-width:95%!important
-}
-
-.layout-mobile .homeLibraryButton.emby-button {
-width:15%!important
 }
 
 .mainDrawer,.mainDrawer.drawer-open {
@@ -2234,153 +1972,12 @@ display:none
 opacity:1
 }
 
-.layout-tv #itemDetailPage:not(.noBackdrop) .detailPagePrimaryContainer {
-height:80vh;
-margin-top: -30vh;
-}
-
-.layout-tv #itemDetailPage .detailLogo {
-margin-top: 10px !important;
-}
-
-.layout-tv .infoText {
-margin-top: 0em!important;
-}
-
-.layout-tv .emby-button.detailFloatingButton {
-background-color:transparent!important;
-color:#fff!important
-}
-
-.layout-tv .emby-button.detailFloatingButton:focus {
-    background-color: var(--accent)!important;
-}
-
-.layout-tv .trackSelections {
-    max-width: 29em;
-    font-size: 0.9vw !important;
-    margin-top: -12vh;
-    margin-left: 26vw;
-}
-.itemsContainer-tv>.portraitCard {
-    width: calc(12.5% - 10px) !important;
-}
-.layout-tv .itemDetailsGroup {
-    font-size: 1vw;
-    margin-top: -5vh;
-    max-width: 23vw;
-    margin-bottom: 6%;
-}
-
-.layout-tv h3.tagline {
-    font-size: 1.9pc;
-}
-
 .emby-button.show-focus:focus span.material-icons.detailButton-icon.play_arrow {
     color: white !important;
 }
 
-.layout-tv .mainDetailButtons {
-    margin-left: 1vw !important;
-    margin-top: -3vh !important;
-    font-size: 4vh;
-}
-
-.layout-tv .listItemImage-large-tv {
-    height: 23vh !important;
-    width: 55% !important;
-}
-
-.layout-tv #itemDetailPage .vertical-list {
-    grid-template-columns: repeat(2,1fr);
-}
-
-.layout-tv .secondary.listItem-overview.listItemBodyText {
-    font-size: 1vw !important;
-    line-height: inherit;
-}
-
-.layout-tv .nextUpSection.verticalSection.detailVerticalSection {
-  margin-left: 70vw;
-  z-index: 10 !important;
-  margin-top: -74vh;
-  margin-bottom: 40vh !important;
-  margin-right: -100vw !important;
-}
-
-.layout-tv .itemsContainer-tv>.overflowBackdropCard {
-    width: 18.5vw;
-}
-
-.layout-desktop .childrenItemsContainer.itemsContainer.padded-right.vertical-list {
-margin-top:-5em!important;
-}
-
 .backgroundContainer {
 background-color:#000!important;
-}
-
-.layout-desktop .emby-scroller-container {
-margin-top:2em;
-}
-
-.layout-mobile .card,.homeLibraryButton {
-max-width:30%;
-}
-
-.layout-mobile p.overview {
-font-size:81%;
-}
-
-.layout-mobile .hide + .detailPageWrapperContainer .detailPagePrimaryContent {
-min-height:6vh!important;
-}
-
-.layout-mobile .itemDetailsGroup {
-font-size:76%;
-}
-
-.layout-mobile .trackSelections {
-font-size:71%;
-}
-
-.layout-mobile .itemMiscInfo,.layout-mobile .itemName,.layout-mobile .mainDetailButtons,.layout-mobile .parentName {
-font-size:74%;
-}
-
-.layout-mobile .backgroundContainer {
-background-color:#00000000!important;
-}
-
-.layout-mobile .detailSectionContent a {
-color:var(--accent);
-font-size:80%;
-}
-
-.layout-mobile p#seriesAirTime {
-font-size:68%;
-margin-top:-1em;
-}
-
-.layout-mobile .paging {
-width:50%;
-}
-
-.layout-mobile .primaryImageWrapper > img {
-display:none!important;
-z-index:-3;
-}
-
-.layout-mobile #itemDetailPage .detailLogo {
-display:block!important;
-margin-bottom:-50%!important;
-margin-top:11%;
-min-width:80%!important;
-z-index:5!important;
-}
-
-.layout-mobile #itemDetailPage .itemName.infoText.parentNameLast {
-display:none!important;
 }
 
 .taskProgressInner {
@@ -2420,17 +2017,6 @@ display:none!important;
 display:none!important;
 }
 
-:not(.layout-mobile) body:not(.idle):not(.hide-scroll) .videoPlayerContainer {
-    margin-left: -75vw !important;
-    margin-right: -18vw;
-    max-height: 81vh;
-    max-width: 78vw;
-    left: 25vw;
-    position: sticky !important;
-    height: 81vh;
-    margin-top: 10vh;
-}
-
 :not(.layout-mobile) body:not(.idle) .htmlvideoplayer {
     mask-image: url("https://cdn.jsdelivr.net/gh/ShiniGandhi/JellyTheme@main/screenshots/trailer-gradient.png");
     -webkit-mask-image: url("https://cdn.jsdelivr.net/gh/ShiniGandhi/JellyTheme@main/screenshots/trailer-gradient.png");
@@ -2451,76 +2037,12 @@ display:none!important;
     display: none !important;
 }
 
-.layout-mobile .htmlvideoplayer {
-margin-top:-20em!important;
-object-fit:contain;
-}
-
-.layout-mobile .hide-scroll .htmlvideoplayer {
-margin-top:0!important;
-}
-
 h3.tagline {
 margin-top:-1vh;
 }
 
-
-.layout-desktop .detailPagePrimaryContent {
-margin-bottom:1em!important;
-}
-
 div#castCollapsible {
 margin-bottom:2em;
-}
-
-.layout-desktop div#castCollapsible {
--webkit-mask-image:linear-gradient(90deg,rgba(0,0,0,1) 92%,rgba(0,0,0,0) 100%);
-overflow-x:clip;
-}
-
-.layout-tv div#castCollapsible {
--webkit-mask-image:linear-gradient(90deg,rgba(0,0,0,1) 92%,rgba(0,0,0,0) 100%);
-margin-bottom:6em;
-overflow-x:clip;
-}
-
-.layout-tv p.overview {
-    font-size: 1.5pc;
-    margin-top: -3vh;
-}
-
-.layout-tv .overview-controls {
-    font-size: 1.2pc !important;
-    margin-top: -1vh;
-}
-
-.layout-tv p#seriesAirTime {
-    font-size: 1pc;
-}
-
-.layout-tv h1.itemName.infoText.parentNameLast.withOriginalTitle {
-    margin-bottom: -2vh !important;
-    margin-top: 8vh !important;
-}
-
-.layout-tv .trackSelections {
-  max-width:29em;
-  font-size: 1.3vh !important;
-}
-
-.layout-mobile .detailPageContent {
-background:linear-gradient(0deg,black 70%,#00000077 96%,transparent);
-padding:0!important;
-}
-
-.layout-mobile canvas.libassjs-canvas {
-z-index:3;
-}
-
-.layout-desktop .trackSelections {
-font-size:small!important;
-margin-left:50vh;
-max-width:27em!important;
 }
 
 .writersGroup {
@@ -2531,16 +2053,8 @@ display:none;
 display:none;
 }
 
-.layout-desktop .trackSelections .selectContainer .selectLabel {
-margin:0 -1.5em 0 0;
-}
-
 .detailsGroupItem .label,.trackSelections .selectContainer .selectLabel {
 margin:0 -1.4em 0 0;
-}
-
-.layout-desktop .mainDetailButtons {
-margin-left:0!important;
 }
 
 .detailButton-icon {
@@ -2552,14 +2066,6 @@ width:1em;
 
 span.material-icons.detailButton-icon.play_arrow {
 color:var(--accent)!important;
-}
-
-.layout-desktop span.material-icons.detailButton-icon.play_arrow {
-    font-size:2.8em!important;
-}
-
-.layout-mobile span.material-icons.detailButton-icon.play_arrow {
-color:#fff!important;
 }
 
 .pageTitle {
