@@ -2446,7 +2446,7 @@ display:none!important;
     -webkit-mask-image: url("https://cdn.jsdelivr.net/gh/ShiniGandhi/JellyTheme@main/screenshots/trailer-gradient.png");
     transition: 2500ms;
     -webkit-mask-size: 156vh;
-    mask-size: 156vh;
+    mask-size: 169vh;
     -webkit-mask-position: 0% 100%;
     mask-position: 0% 100%;
 }
