@@ -8,6 +8,24 @@ background:var(--accent);
 text-shadow:none
 }
 
+
+.layout-mobile .backgroundContainer {
+    background-color: #000000!important;
+}
+
+.cardOverlayContainer {
+    background: rgba(0,0,0,.15) !important;
+}
+
+.mdl-slider {
+color: #919191 !important;
+}
+
+
+.mdl-spinner__circle.mdl-spinner__circleRight.mdl-spinner__circleRight-active {
+	color: var(--accent) !important;
+}
+
 ::selection {
 background:var(--accent);
 text-shadow:none

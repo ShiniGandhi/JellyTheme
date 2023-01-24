@@ -187,10 +187,6 @@ button.cardImageContainer.cardContent.itemAction.lazy.blurhashed.lazy-image-fade
 border-radius:var(--rounding) var(--rounding) 0 0!important
 }
 
-.backdropImageFadeIn {
-    animation-delay: 3s;
-}
-
 .cardBox:not(.visualCardBox) .cardPadder,.cardContent-shadow {
 box-shadow:none
 }
@@ -283,17 +279,18 @@ div#itemBackdrop {
   position: absolute;
   background-position: top right;
   right: 0;
-  width: 40vw;
+  width: 100w;
   background-size: cover;
   background-attachment: scroll;
-  mask-image: linear-gradient(to right, #00000008, black),
-  linear-gradient(to top, black, black);
-  -webkit-mask-image: linear-gradient(to right, #00000008, black),
-  linear-gradient(to top, black, black);
+  mask-image: linear-gradient(to right, white 100%, black),
+  linear-gradient(to top, transparent, black 100%);
+  -webkit-mask-image: linear-gradient(to right, white 100%, black),
+  linear-gradient(to top, transparent , black 100%);
   position: fixed;
   mask-composite: source-in;
   -webkit-mask-composite: source-in;
   mask-composite: intersect;
+  margin-top: -2vh;;
 }
 
 div#itemBackdrop::after {
@@ -318,6 +315,23 @@ text-shadow:1px 1px 5px #141414;
 width:60vw
 }
 
+.layout-mobile .backgroundContainer {
+    background-color: #000000!important;
+}
+
+.cardOverlayContainer {
+    background: rgba(0,0,0,.15) !important;
+}
+
+.mdl-slider {
+color: #919191 !important;
+}
+
+
+.mdl-spinner__circle.mdl-spinner__circleRight.mdl-spinner__circleRight-active {
+	color: var(--accent) !important;
+}
+
 .layout-mobile .infoWrapper {
     padding-left: 3%;
 }
@@ -337,7 +351,7 @@ width:60vw
     -webkit-mask-image: linear-gradient(to top, transparent, #000000E8);
     margin-top: 0vh;
     transition: 300ms;
-    background-position-x: 75%;
+    height: 75% !important;
 }
 
 .layout-mobile .itemMiscInfo,.layout-mobile .itemName,.layout-mobile .mainDetailButtons,.layout-mobile .parentName {
@@ -1485,14 +1499,8 @@ margin-bottom:auto;
 margin-top:auto
 }
 
-.backgroundContainer.withBackdrop {
-background-color:#141414;
-opacity:1;
-z-index:-3
-}
-
 .backgroundContainer {
-background-color:#141414!important;
+background-color:#101010!important;
 z-index:-6
 }
 
@@ -1864,10 +1872,6 @@ color:var(--accent)
 border-color:transparent!important
 }
 
-.backgroundContainer {
-background-color:#101010
-}
-
 .raised:hover {
 background: #a7a7a7 !important;
 }
@@ -2063,16 +2067,8 @@ width:calc(100% - 10vw)
 }
 
 
-.withSectionTabs .backdropImage {
+.backdropContainer {
 display: none !important;
-}
-
-
-.backdropImage {
-    mask-image: linear-gradient(to right, transparent 100%, black),
-    linear-gradient(to top, transparent, black 100%);
-    -webkit-mask-image: linear-gradient(to right, transparent 100%, black),
-    linear-gradient(to top, transparent , black 100%);
 }
 
 
@@ -2162,10 +2158,6 @@ display:none
 #indexPage .homeLibraryButton {
   background:#222222!important;
   transition: .2s;
-}
-
-.itemDetailPage.backdropContainer {
-z-index:-3!important
 }
 
 .itemSelectionPanel {
@@ -2332,10 +2324,6 @@ color:#fff!important
 margin-top:-5em!important;
 }
 
-.backgroundContainer {
-background-color:#000!important;
-}
-
 .layout-desktop .emby-scroller-container {
 margin-top:2em;
 }
@@ -2362,10 +2350,6 @@ font-size:71%;
 
 .layout-mobile .itemMiscInfo,.layout-mobile .itemName,.layout-mobile .mainDetailButtons,.layout-mobile .parentName {
 font-size:74%;
-}
-
-.layout-mobile .backgroundContainer {
-background-color:#00000000!important;
 }
 
 .layout-mobile .detailSectionContent a {

@@ -21,3 +21,7 @@ display:none!important
 a.lnkHomePreferences.listItem-border.emby-button {
 display:none!important
 }
+
+div#scenesCollapsible {
+    display: none;
+}

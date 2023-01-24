@@ -610,3 +610,40 @@
     font-size: 22px;
 }
 
+.btnPause {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    opacity: 0.3;
+  } 
+  
+  body:not(.dashboardDocument) .material-icons.pause:before {
+    font-size: 5em;
+  }
+  
+  body:not(.dashboardDocument) .xlargePaperIconButton.material-icons.play_arrow:before {
+    font-size: 5em;
+  }
+  
+  @media (max-width: 50em) {
+    .videoOsdBottom .btnFastForward, .videoOsdBottom .btnRewind {
+      display: block !important;
+    }
+  }
+  
+  body:not(.dashboardDocument) button.btnPause.autoSize.paper-icon-button-light:hover {
+    opacity: 0.7 !important;
+    color: var(--accent) !important;
+    background: transparent !important;
+    transition: 0.2s;
+  }
+  
+  .layout-desktop .btnPause[aria-label="Pause"], .layout-tv .btnPause[aria-label="Pause"] {
+      opacity: 0;
+  }
+  
+  .layout-desktop .trackSelections {
+      margin-top: -10vh !important;
+  }
