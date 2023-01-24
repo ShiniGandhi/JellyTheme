@@ -2429,14 +2429,16 @@ display:none!important;
 }
 
 :not(.layout-mobile) body:not(.idle):not(.hide-scroll) .videoPlayerContainer {
-    margin-left: -75vw !important;
-    margin-right: -18vw;
-    max-height: 81vh;
-    max-width: 78vw;
-    left: 25vw;
-    position: sticky !important;
-    height: 81vh;
-    margin-top: 10vh;
+	margin-left: -84vw !important;
+	margin-right: 0vw;
+	max-height: 81vh;
+	max-width: 78vw;
+	left: 25vw;
+	position: sticky !important;
+	height: 81vh;
+	margin-top: 10vh;
+	padding-bottom: 103vh;
+	padding-left: 37vw;
 }
 
 :not(.layout-mobile) body:not(.idle) .htmlvideoplayer {
