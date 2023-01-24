@@ -279,7 +279,7 @@ div#itemBackdrop {
   position: absolute;
   background-position: top right;
   right: 0;
-  width: 100w;
+  width: 100vw;
   background-size: cover;
   background-attachment: scroll;
   mask-image: linear-gradient(to right, white 100%, black),
