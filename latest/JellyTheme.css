@@ -2162,7 +2162,7 @@ background:#00000054!important;
 transition:.2s
 }
 
-.backdropContainer {
+.backdropContainer:not(.hide) {
 display:block !important;
 }
 
@@ -2439,8 +2439,8 @@ display:none!important;
 }
 
 :not(.layout-mobile) body:not(.idle):not(.hide-scroll) .videoPlayerContainer {
-    margin-left: -75vw !important;
-    margin-right: -18vw;
+	margin-left: -83vw !important;
+    margin-right: -14vw;
     max-height: 81vh;
     max-width: 78vw;
     left: 25vw;
