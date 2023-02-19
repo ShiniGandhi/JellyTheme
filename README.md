@@ -8,6 +8,9 @@ The theme is optimized for 1080p, but it should work well on 720p, 768p, 1440p a
 4K is needs to be at 125% or 150% zoom. </br>
 I'm still looking into solutions for that.
 
+#### Known Issues
+* Video does not show on Jellyfin Desktop.
+
 ## Installation Instuctions - Basic
 #### NOTE - BEFORE INSTALLING
 Any `@import` line that you add to your CSS **must** be at the very top of your custom CSS. otherwise the file will not be imported.
