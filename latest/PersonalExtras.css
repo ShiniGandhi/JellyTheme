@@ -107,7 +107,16 @@ span.listItemIcon.material-icons.notifications {
     display: none;
 }
 
-/*------------REMOVE SYNC AND SEARCH BUTTONS------------*/
+/*----------ADDONS FOR NEW LIBRARIES----------*/
 .headerSearchButton, .headerSyncButton {
 	display: none;
+}
+
+.material-icons.homeLibraryIcon {
+  display: none;
+}
+
+#indexPage .homeLibraryButton:hover {
+  background-color: #666 !important;
+  border-radius: 12vw !important;
 }
