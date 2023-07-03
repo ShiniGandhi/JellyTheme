@@ -106,3 +106,8 @@ span.listItemIcon.material-icons.notifications {
 .listItemAside.actionSheetItemAsideText {
     display: none;
 }
+
+/*------------REMOVE SYNC AND SEARCH BUTTONS------------*/
+.headerSearchButton, .headerSyncButton {
+	display: none;
+}
