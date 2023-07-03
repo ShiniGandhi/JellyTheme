@@ -17,6 +17,30 @@ text-shadow:none
     background: rgba(0,0,0,.15) !important;
 }
 
+.portraitCard[data-type="Person"] {
+  display: block;
+  height: 24vh !important;
+  width: 24vh !important;
+  top: 0 !important;
+  border-radius: 100px;
+  left: 0 !important;
+}
+
+.itemName.infoText.parentNameLast {
+  margin-left: 13vw !important;
+}
+.portraitCard[data-type="Person"] .cardImageContainer {
+  margin-top: -2vh !important;
+}
+
+.paper-icon-button-light:not(:disabled) {
+	color: #bbb !important;
+}
+
+:not(.layout-mobile) body:not(.idle):not(.hide-scroll) .videoPlayerContainer {
+	padding-left: 37vw;
+}
+
 .mdl-slider {
 color: #919191 !important;
 }
