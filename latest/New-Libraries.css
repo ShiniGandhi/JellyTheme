@@ -37,14 +37,6 @@
 	padding: 0.6vh;
 }
 
-.material-icons.homeLibraryIcon {
-  display: none;
-}
-
-#indexPage .homeLibraryButton:hover {
-  background-color: #666 !important;
-  border-radius: 12vw !important;
-}
 .emby-tab-button.emby-button.emby-tab-button-active {
   background: #bbb !important;
   border-radius: 12vw;
