@@ -122,7 +122,3 @@ html:not(.layout-mobile) .sections.homeSectionsContainer {
 .verticalSection:focus-within, .verticalSection:hover {
   z-index: unset !important;
 }
-
-.headerSearchButton, .headerSyncButton {
-	display: none;
-}
