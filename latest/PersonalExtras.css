@@ -125,3 +125,30 @@ span.listItemIcon.material-icons.notifications {
 	opacity: 0;
 	width: 20em;
 }
+
+/*------------------OTHERS------------------*/
+body, h1, h2, h3, h4 {
+  font-family: 'Quicksand', sans-serif;
+}
+
+.emby-textarea {
+  font-family: monospace;
+  font-size: 10pt;
+}
+
+#btnShutdown {
+    display: none !important;
+}
+
+.chapterThumbTextContainer {
+  background: transparent;
+}
+
+h2.jellyscrubThumbText {
+    background: #00000070;
+    text-align: center;
+    margin-left: -1vw;
+    font-size: 24px;
+    margin-right: -1vw;
+}
+
