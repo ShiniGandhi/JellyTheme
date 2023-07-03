@@ -20,7 +20,7 @@ Since this is my personal theme, it might change however I see fit. If you don't
 
 ### Required
 Put these at the top of your custom CSS:
-```
+```css
 @import url("https://cdn.jsdelivr.net/gh/ShiniGandhi/JellyTheme@latest/latest/JellyTheme.css");
 :root {
 --accent:<COLOR>!important;
@@ -30,7 +30,7 @@ Put these at the top of your custom CSS:
 If you want a slightly cleaner UI, with no backdrop in the main menu and a few more things, use `JellyTheme-Cleaner.css` rather than `JellyTheme.css`.
 
 If you don't use video backdrops, add this line to display a poster on mobile:
-```
+```css
 .layout-mobile .primaryImageWrapper > img {
 display:block!important;
 }
@@ -47,14 +47,14 @@ The following is removed: </br>
  - User icon </br>
  - Cast button (still displayed on mobile) </br>
  - Display and Home Preferences in User Settings
-```
+```css
 @import url("https://cdn.jsdelivr.net/gh/ShiniGandhi/JellyTheme@latest/latest/Cleaner-UI.css");
 ```
 
 #### Resize Some Elements
 
 If you want Continue Watching, Next Up and the list of seasons to be smaller, as shown in my screenshots, import this:</br>
-```
+```css
 @import url("https://cdn.jsdelivr.net/gh/ShiniGandhi/JellyTheme@latest/latest/Resize-Cards.css");
 ```
 **Keep in mind that for this to work your home screen order must be as follow:**
@@ -66,14 +66,14 @@ If you want Continue Watching, Next Up and the list of seasons to be smaller, as
 #### Right-to-Left Support
 
 If your server's metadata is in Hebrew, Arabic (or any other language that is written right-to-left, import this:</br>
-```
+```css
 @import url("https://cdn.jsdelivr.net/gh/ShiniGandhi/JellyTheme@latest/latest/RTL-Fix.css");
 ```
 
 #### Revamped video player
 
 If you want the revamped video player, optimized for most screen resolutions and scales, (screenshot below), import this:</br>
-```
+```css
 @import url("https://cdn.jsdelivr.net/gh/ShiniGandhi/JellyTheme@latest/latest/PlayerRevamp.css");
 ```
 ![](/screenshots/PlayerRevamp.png)
@@ -81,7 +81,7 @@ If you want the revamped video player, optimized for most screen resolutions and
 #### Trimmed Quality Section
 
 If you want to have a slightly less overwhelming quality menu (screenshot below), import this:</br>
-```
+```css
 @import url("https://cdn.jsdelivr.net/gh/ShiniGandhi/JellyTheme@latest/latest/TrimmedQualitySection.css");
 ```
 ![](/screenshots/TrimmedQualitySection.png)
@@ -91,7 +91,7 @@ If you want to have a slightly less overwhelming quality menu (screenshot below)
 
 If you want slimmer Active Devices entries like here (At the moment this ~~only looks good in 1080p~~ looks great in 4K and 1440p, but not perfect in 1080p (how the turntables huh), still working on scaling it), Import this: </br>
 ![ ](/screenshots/Slim-ActiveDevices.png)</br>
-```
+```css
 @import url("https://cdn.jsdelivr.net/gh/ShiniGandhi/JellyTheme@latest/latest/Slim-ActiveDevices.css");
 ``` 
 </br>
@@ -100,6 +100,20 @@ NOTE: The logo will be pretty low resolution because it's generating a low resol
 1. Open your `dashboard-dashboard.********************.bundle.js` file (asterisks are replaced with something specific to your instance, but this never changes after initial setup).
 2. Find `tag:a.ParentLogoImageTag` and set the values of `maxHeight` and `maxWidth` to `500`.
 3. Clear browser cache.</br>
+
+#### Modern Libraries
+
+![ ](/screenshots/MainPageTabs.png)</br>
+![ ](/screenshots/LibraryTabs.png)</br>
+If you want to have a more modern look to the library list (more AppleTV-esque), import this:</br>
+```css
+@import url("https://cdn.jsdelivr.net/gh/ShiniGandhi/JellyTheme@latest/latest/New-Libraries.css");
+```
+Also, you may have noticed that in the screenshot I provided the search button was moved to the menu bar.</br>
+To do this, add the following to your `main.*******.bundle.js` file, right after `name: d.ZP.translate("Favorites")`:
+```js
+, { name: d.ZP.translate("Search"), href: 'search.html' }
+```
 
 ## Installation Instuctions - Advanced Extras
 These require modifying some of the JavaScript files that Jellyfin generates. They will be different for every instance, and probably with different names, so make sure you back up these files before making any changes. </br>
