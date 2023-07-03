@@ -1,0 +1,128 @@
+.section0 .itemsContainer.vertical-wrap {
+  width: fit-content !important;
+  background: #333;
+  border-radius: 13vh;
+  padding: 0 !important;
+  justify-content: center;
+}
+
+#indexPage .homeLibraryButton {
+  background: transparent !important;
+  min-width:  0 !important;
+  max-width: 50vw !important;
+}
+
+.section0 {
+  display: flex;
+  justify-content: center;
+}
+
+.homeLibraryText {
+  color: #888;
+}
+.raised.homeLibraryButton.emby-button:hover {
+  outline: none !important;
+  box-shadow: none !important;
+}
+.raised:hover .homeLibraryText {
+  color: white !important;
+  transition: 100ms;
+}
+.layout-mobile .homeLibraryButton.emby-button {
+	max-width: 40% !important;
+	width: 40% !important;
+}
+
+.layout-mobile .raised.homeLibraryButton.emby-button {
+	padding: 0.6vh;
+}
+
+.material-icons.homeLibraryIcon {
+  display: none;
+}
+
+#indexPage .homeLibraryButton:hover {
+  background-color: #666 !important;
+  border-radius: 12vw !important;
+}
+.emby-tab-button.emby-button.emby-tab-button-active {
+  background: #bbb !important;
+  border-radius: 12vw;
+}
+.emby-tab-button-active .homeLibraryText, .emby-tab-button-active .emby-button-foreground {
+  color: #222;
+}
+
+html:not(.layout-mobile) .section1 {
+	margin-top: unset !important;
+}
+.noHomeButtonHeader .headerTabs.sectionTabs {
+	display: none;
+}
+
+.section0 .itemsContainer.vertical-wrap, .emby-tabs-slider {
+	width: fit-content !important;
+	background: #333;
+	border-radius: 13vh;
+	padding: 0 !important;
+	justify-content: center;
+}
+
+.section0, .tabs-viewmenubar {
+	display: flex;
+	justify-content: center;
+}
+
+.homeLibraryText, .emby-button-foreground {
+	color: #888;
+}
+
+#indexPage .homeLibraryButton, .emby-tab-button {
+	background: transparent !important;
+	min-width: 0 !important;
+	max-width: 50vw !important;
+        width: fit-content !important;
+}
+
+.itemsContainer, .emby-tabs-slider {
+	margin: 0 !important;
+}
+
+.homeLibraryButton, .emby-tab-button {
+	margin: .5em !important;
+}
+
+.raised:hover .homeLibraryText, .emby-tab-button:hover .emby-button-foreground {
+	color: white !important;
+	transition: 100ms;
+}
+
+#indexPage .homeLibraryButton:hover, .emby-tab-button:hover {
+	background-color: #666 !important;
+	border-radius: 12vw !important;
+}
+
+.raised.homeLibraryButton.emby-button:hover, .emby-tab-button:hover, .homeLibraryButton:focus {
+	outline: none !important;
+	box-shadow: none !important;
+}
+
+.emby-tab-button:hover::after {
+  background: unset !important;
+}
+
+html:not(.layout-mobile) .sections.homeSectionsContainer {
+  margin-top: -5.55em;
+}
+
+.section0 .itemsContainer.vertical-wrap, .emby-tabs-slider {
+  position: relative;
+  z-index: 1000;
+}
+.verticalSection:focus-within, .verticalSection:hover {
+  z-index: unset !important;
+}
+
+.headerSearchButton, .headerSyncButton {
+	display: none;
+}
