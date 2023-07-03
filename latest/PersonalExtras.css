@@ -120,3 +120,8 @@ span.listItemIcon.material-icons.notifications {
   background-color: #666 !important;
   border-radius: 12vw !important;
 }
+.headerButton.mainDrawerButton.barsMenuButton.headerButtonLeft.paper-icon-button-light {
+	margin-right: -20em;
+	opacity: 0;
+	width: 20em;
+}
