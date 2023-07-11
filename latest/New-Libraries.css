@@ -17,6 +17,37 @@
   justify-content: center;
 }
 
+@media (max-width: 300px) {
+  .layout-mobile .tabs-viewmenubar {
+      padding: 0em 0 0 21em !important;
+  }
+}
+@media (min-width: 301px) and (max-width: 350px) {
+  .layout-mobile .tabs-viewmenubar {
+      padding: 0em 0 0 19em !important;
+  }
+}
+@media (min-width: 351px) and (max-width: 400px) {
+  .layout-mobile .tabs-viewmenubar {
+      padding: 0em 0 0 16em !important;
+  }
+}
+@media (min-width: 401px) and (max-width: 450px) {
+  .layout-mobile .tabs-viewmenubar {
+      padding: 0em 0 0 14em !important;
+  }
+}
+@media (min-width: 451px) and (max-width: 500px) {
+  .layout-mobile .tabs-viewmenubar {
+      padding: 0em 0 0 10em !important;
+  }
+}
+@media (min-width: 501px) and (max-width: 550px) {
+  .layout-mobile .tabs-viewmenubar {
+      padding: 0em 0 0 7em !important;
+  }
+}
+
 .homeLibraryText {
   color: #888;
 }
